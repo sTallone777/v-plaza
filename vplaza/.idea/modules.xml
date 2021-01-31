@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/vplaza.iml" filepath="$PROJECT_DIR$/vplaza.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vplazasvr/vplaza-mapper/vplaza-mapper.iml" filepath="$PROJECT_DIR$/vplazasvr/vplaza-mapper/vplaza-mapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vplazasvr/vplaza-model/vplaza-model.iml" filepath="$PROJECT_DIR$/vplazasvr/vplaza-model/vplaza-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vplazasvr/vplazasvr.iml" filepath="$PROJECT_DIR$/vplazasvr/vplazasvr.iml" />
+    </modules>
+  </component>
+</project>
