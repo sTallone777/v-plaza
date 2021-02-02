@@ -22,7 +22,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4d9da98e-4489-4e20-b05b-f01f8270fc7a" name="Default Changelist" comment="" />
+    <list default="true" id="4d9da98e-4489-4e20-b05b-f01f8270fc7a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/mybatisbuilder.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vplazasvr/vplaza-mapper/src/main/java/com/ranbo/vplaza/VplazaMapperApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vplazasvr/vplaza-model/src/main/java/com/ranbo/vplaza/VplazaModelApplication.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,8 +50,17 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Java/console1" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Java/vhr/vhr" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\work\Git\v-plaza\vplaza\vplazasvr\vplaza-mapper\src\main\java\com\ranbo\vplaza" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -69,20 +83,37 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="389" y="292" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1612272188761">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="389" y="292" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1612272188761" />
     <state x="210" y="275" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1612049656077">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="210" y="275" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1612049656077" />
-    <state x="740" y="280" key="FileChooserDialogImpl" timestamp="1612050733389">
+    <state x="740" y="280" key="FileChooserDialogImpl" timestamp="1612272778034">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="740" y="280" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1612050733389" />
+    <state x="740" y="280" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1612272778034" />
     <state x="60" y="263" key="IDE.errors.dialog" timestamp="1612050119078">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="60" y="263" key="IDE.errors.dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1612050119078" />
+    <state x="308" y="255" key="MyBatisBuilder.ParametersDialog" timestamp="1612273469264">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="308" y="255" key="MyBatisBuilder.ParametersDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1612273469264" />
+    <state x="180" y="341" key="MyBatisBuilder.SettingsDialog" timestamp="1612271889949">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="180" y="341" key="MyBatisBuilder.SettingsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1612271889949" />
+    <state x="229" y="99" key="SettingsEditor" timestamp="1612273694036">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="229" y="99" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1612273694036" />
     <state x="146" y="179" width="1251" height="669" key="new project wizard" timestamp="1612051874035">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

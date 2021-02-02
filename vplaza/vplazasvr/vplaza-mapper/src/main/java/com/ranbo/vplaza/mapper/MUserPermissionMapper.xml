@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ranbo.vplaza.mapper.MUserPermissionMapper">
+  <resultMap id="BaseResultMap" type="com.ranbo.vplaza.model.MUserPermission">
+    <!-- @mbg.generated: generated automatically, do not modify! -->
+    <id column="ID" jdbcType="SMALLINT" property="id" />
+    <result column="UNIQUE_ID" jdbcType="VARCHAR" property="uniqueId" />
+    <result column="PERMISSION_NAME" jdbcType="VARCHAR" property="permissionName" />
+    <result column="PERMISSION_CODE" jdbcType="TINYINT" property="permissionCode" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!-- @mbg.generated: generated automatically, do not modify! -->
+    ID, UNIQUE_ID, PERMISSION_NAME, PERMISSION_CODE
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Short" resultMap="BaseResultMap">
+    <!-- @mbg.generated: generated automatically, do not modify! -->
+    select 
+    <include refid="Base_Column_List" />
+    from M_USER_PERMISSION
+    where ID = #{id,jdbcType=SMALLINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Short">
+    <!-- @mbg.generated: generated automatically, do not modify! -->
+    delete from M_USER_PERMISSION
+    where ID = #{id,jdbcType=SMALLINT}
+  </delete>
+  <insert id="insert" parameterType="com.ranbo.vplaza.model.MUserPermission">
+    <!-- @mbg.generated: generated automatically, do not modify! -->
+    insert into M_USER_PERMISSION (ID, UNIQUE_ID, PERMISSION_NAME, 
+      PERMISSION_CODE)
+    values (#{id,jdbcType=SMALLINT}, #{uniqueId,jdbcType=VARCHAR}, #{permissionName,jdbcType=VARCHAR}, 
+      #{permissionCode,jdbcType=TINYINT})
+  </insert>
+  <insert id="insertSelective" parameterType="com.ranbo.vplaza.model.MUserPermission">
+    <!-- @mbg.generated: generated automatically, do not modify! -->
+    insert into M_USER_PERMISSION
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        ID,
+      </if>
+      <if test="uniqueId != null">
+        UNIQUE_ID,
+      </if>
+      <if test="permissionName != null">
+        PERMISSION_NAME,
+      </if>
+      <if test="permissionCode != null">
+        PERMISSION_CODE,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=SMALLINT},
+      </if>
+      <if test="uniqueId != null">
+        #{uniqueId,jdbcType=VARCHAR},
+      </if>
+      <if test="permissionName != null">
+        #{permissionName,jdbcType=VARCHAR},
+      </if>
+      <if test="permissionCode != null">
+        #{permissionCode,jdbcType=TINYINT},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.ranbo.vplaza.model.MUserPermission">
+    <!-- @mbg.generated: generated automatically, do not modify! -->
+    update M_USER_PERMISSION
+    <set>
+      <if test="uniqueId != null">
+        UNIQUE_ID = #{uniqueId,jdbcType=VARCHAR},
+      </if>
+      <if test="permissionName != null">
+        PERMISSION_NAME = #{permissionName,jdbcType=VARCHAR},
+      </if>
+      <if test="permissionCode != null">
+        PERMISSION_CODE = #{permissionCode,jdbcType=TINYINT},
+      </if>
+    </set>
+    where ID = #{id,jdbcType=SMALLINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.ranbo.vplaza.model.MUserPermission">
+    <!-- @mbg.generated: generated automatically, do not modify! -->
+    update M_USER_PERMISSION
+    set UNIQUE_ID = #{uniqueId,jdbcType=VARCHAR},
+      PERMISSION_NAME = #{permissionName,jdbcType=VARCHAR},
+      PERMISSION_CODE = #{permissionCode,jdbcType=TINYINT}
+    where ID = #{id,jdbcType=SMALLINT}
+  </update>
+  <select id="selectByPrimaryKeyWithLock" parameterType="java.lang.Short" resultMap="BaseResultMap">
+    <!-- @mbg.generated: generated automatically, do not modify! -->
+    select 
+    <include refid="Base_Column_List" />
+    from M_USER_PERMISSION
+    where ID = #{id,jdbcType=SMALLINT}
+    for update
+  </select>
+</mapper>

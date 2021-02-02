@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ranbo.vplaza.mapper.MBehaviorMapper">
+  <resultMap id="BaseResultMap" type="com.ranbo.vplaza.model.MBehavior">
+    <!-- @mbg.generated: generated automatically, do not modify! -->
+    <id column="ID" jdbcType="SMALLINT" property="id" />
+    <result column="BEHAVIOR_NAME" jdbcType="VARCHAR" property="behaviorName" />
+    <result column="BEHAVIOR_CODE" jdbcType="SMALLINT" property="behaviorCode" />
+    <result column="CREATE_USER" jdbcType="VARCHAR" property="createUser" />
+    <result column="CREATE_DATE" jdbcType="TIMESTAMP" property="createDate" />
+    <result column="UPDATE_USER" jdbcType="VARCHAR" property="updateUser" />
+    <result column="UPDATE_DATE" jdbcType="TIMESTAMP" property="updateDate" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!-- @mbg.generated: generated automatically, do not modify! -->
+    ID, BEHAVIOR_NAME, BEHAVIOR_CODE, CREATE_USER, CREATE_DATE, UPDATE_USER, UPDATE_DATE
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Short" resultMap="BaseResultMap">
+    <!-- @mbg.generated: generated automatically, do not modify! -->
+    select 
+    <include refid="Base_Column_List" />
+    from M_BEHAVIOR
+    where ID = #{id,jdbcType=SMALLINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Short">
+    <!-- @mbg.generated: generated automatically, do not modify! -->
+    delete from M_BEHAVIOR
+    where ID = #{id,jdbcType=SMALLINT}
+  </delete>
+  <insert id="insert" parameterType="com.ranbo.vplaza.model.MBehavior">
+    <!-- @mbg.generated: generated automatically, do not modify! -->
+    insert into M_BEHAVIOR (ID, BEHAVIOR_NAME, BEHAVIOR_CODE, 
+      CREATE_USER, CREATE_DATE, UPDATE_USER, 
+      UPDATE_DATE)
+    values (#{id,jdbcType=SMALLINT}, #{behaviorName,jdbcType=VARCHAR}, #{behaviorCode,jdbcType=SMALLINT}, 
+      #{createUser,jdbcType=VARCHAR}, #{createDate,jdbcType=TIMESTAMP}, #{updateUser,jdbcType=VARCHAR}, 
+      #{updateDate,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.ranbo.vplaza.model.MBehavior">
+    <!-- @mbg.generated: generated automatically, do not modify! -->
+    insert into M_BEHAVIOR
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        ID,
+      </if>
+      <if test="behaviorName != null">
+        BEHAVIOR_NAME,
+      </if>
+      <if test="behaviorCode != null">
+        BEHAVIOR_CODE,
+      </if>
+      <if test="createUser != null">
+        CREATE_USER,
+      </if>
+      <if test="createDate != null">
+        CREATE_DATE,
+      </if>
+      <if test="updateUser != null">
+        UPDATE_USER,
+      </if>
+      <if test="updateDate != null">
+        UPDATE_DATE,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=SMALLINT},
+      </if>
+      <if test="behaviorName != null">
+        #{behaviorName,jdbcType=VARCHAR},
+      </if>
+      <if test="behaviorCode != null">
+        #{behaviorCode,jdbcType=SMALLINT},
+      </if>
+      <if test="createUser != null">
+        #{createUser,jdbcType=VARCHAR},
+      </if>
+      <if test="createDate != null">
+        #{createDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateUser != null">
+        #{updateUser,jdbcType=VARCHAR},
+      </if>
+      <if test="updateDate != null">
+        #{updateDate,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.ranbo.vplaza.model.MBehavior">
+    <!-- @mbg.generated: generated automatically, do not modify! -->
+    update M_BEHAVIOR
+    <set>
+      <if test="behaviorName != null">
+        BEHAVIOR_NAME = #{behaviorName,jdbcType=VARCHAR},
+      </if>
+      <if test="behaviorCode != null">
+        BEHAVIOR_CODE = #{behaviorCode,jdbcType=SMALLINT},
+      </if>
+      <if test="createUser != null">
+        CREATE_USER = #{createUser,jdbcType=VARCHAR},
+      </if>
+      <if test="createDate != null">
+        CREATE_DATE = #{createDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateUser != null">
+        UPDATE_USER = #{updateUser,jdbcType=VARCHAR},
+      </if>
+      <if test="updateDate != null">
+        UPDATE_DATE = #{updateDate,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where ID = #{id,jdbcType=SMALLINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.ranbo.vplaza.model.MBehavior">
+    <!-- @mbg.generated: generated automatically, do not modify! -->
+    update M_BEHAVIOR
+    set BEHAVIOR_NAME = #{behaviorName,jdbcType=VARCHAR},
+      BEHAVIOR_CODE = #{behaviorCode,jdbcType=SMALLINT},
+      CREATE_USER = #{createUser,jdbcType=VARCHAR},
+      CREATE_DATE = #{createDate,jdbcType=TIMESTAMP},
+      UPDATE_USER = #{updateUser,jdbcType=VARCHAR},
+      UPDATE_DATE = #{updateDate,jdbcType=TIMESTAMP}
+    where ID = #{id,jdbcType=SMALLINT}
+  </update>
+  <select id="selectByPrimaryKeyWithLock" parameterType="java.lang.Short" resultMap="BaseResultMap">
+    <!-- @mbg.generated: generated automatically, do not modify! -->
+    select 
+    <include refid="Base_Column_List" />
+    from M_BEHAVIOR
+    where ID = #{id,jdbcType=SMALLINT}
+    for update
+  </select>
+</mapper>

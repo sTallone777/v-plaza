@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ranbo.vplaza.mapper.TVideoInfoMapper">
+  <resultMap id="BaseResultMap" type="com.ranbo.vplaza.model.TVideoInfo">
+    <!-- @mbg.generated: generated automatically, do not modify! -->
+    <id column="ID" jdbcType="BIGINT" property="id" />
+    <result column="UNIQUE_ID" jdbcType="VARCHAR" property="uniqueId" />
+    <result column="VIDEO_NAME" jdbcType="VARCHAR" property="videoName" />
+    <result column="VIDEO_DESC" jdbcType="VARCHAR" property="videoDesc" />
+    <result column="KEY_WORD" jdbcType="VARCHAR" property="keyWord" />
+    <result column="VIDEO_NO" jdbcType="VARCHAR" property="videoNo" />
+    <result column="RELEASE_YEAR" jdbcType="DATE" property="releaseYear" />
+    <result column="PUBLISHER" jdbcType="VARCHAR" property="publisher" />
+    <result column="STARRING" jdbcType="VARCHAR" property="starring" />
+    <result column="DIRECTOR" jdbcType="VARCHAR" property="director" />
+    <result column="COUNTRY" jdbcType="VARCHAR" property="country" />
+    <result column="HAS_MOSAIC" jdbcType="BIT" property="hasMosaic" />
+    <result column="PATH" jdbcType="VARCHAR" property="path" />
+    <result column="MENU_CODE" jdbcType="VARCHAR" property="menuCode" />
+    <result column="PLAY_PERMISSION" jdbcType="TINYINT" property="playPermission" />
+    <result column="VIEWS" jdbcType="BIGINT" property="views" />
+    <result column="DURATION" jdbcType="TIME" property="duration" />
+    <result column="THUMB_PATH" jdbcType="VARCHAR" property="thumbPath" />
+    <result column="RELATED_IMG" jdbcType="VARCHAR" property="relatedImg" />
+    <result column="CHECK_SUM" jdbcType="VARCHAR" property="checkSum" />
+    <result column="APPROVAL_STATUS" jdbcType="BIT" property="approvalStatus" />
+    <result column="IS_DELETED" jdbcType="BIT" property="isDeleted" />
+    <result column="CREATE_USER" jdbcType="VARCHAR" property="createUser" />
+    <result column="CREATE_DATE" jdbcType="TIMESTAMP" property="createDate" />
+    <result column="UPDATE_USER" jdbcType="VARCHAR" property="updateUser" />
+    <result column="UPDATE_DATE" jdbcType="TIMESTAMP" property="updateDate" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!-- @mbg.generated: generated automatically, do not modify! -->
+    ID, UNIQUE_ID, VIDEO_NAME, VIDEO_DESC, KEY_WORD, VIDEO_NO, RELEASE_YEAR, PUBLISHER, 
+    STARRING, DIRECTOR, COUNTRY, HAS_MOSAIC, `PATH`, MENU_CODE, PLAY_PERMISSION, VIEWS, 
+    DURATION, THUMB_PATH, RELATED_IMG, CHECK_SUM, APPROVAL_STATUS, IS_DELETED, CREATE_USER, 
+    CREATE_DATE, UPDATE_USER, UPDATE_DATE
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    <!-- @mbg.generated: generated automatically, do not modify! -->
+    select 
+    <include refid="Base_Column_List" />
+    from T_VIDEO_INFO
+    where ID = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    <!-- @mbg.generated: generated automatically, do not modify! -->
+    delete from T_VIDEO_INFO
+    where ID = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.ranbo.vplaza.model.TVideoInfo">
+    <!-- @mbg.generated: generated automatically, do not modify! -->
+    insert into T_VIDEO_INFO (ID, UNIQUE_ID, VIDEO_NAME, 
+      VIDEO_DESC, KEY_WORD, VIDEO_NO, 
+      RELEASE_YEAR, PUBLISHER, STARRING, 
+      DIRECTOR, COUNTRY, HAS_MOSAIC, 
+      `PATH`, MENU_CODE, PLAY_PERMISSION, 
+      VIEWS, DURATION, THUMB_PATH, 
+      RELATED_IMG, CHECK_SUM, APPROVAL_STATUS, 
+      IS_DELETED, CREATE_USER, CREATE_DATE, 
+      UPDATE_USER, UPDATE_DATE)
+    values (#{id,jdbcType=BIGINT}, #{uniqueId,jdbcType=VARCHAR}, #{videoName,jdbcType=VARCHAR}, 
+      #{videoDesc,jdbcType=VARCHAR}, #{keyWord,jdbcType=VARCHAR}, #{videoNo,jdbcType=VARCHAR}, 
+      #{releaseYear,jdbcType=DATE}, #{publisher,jdbcType=VARCHAR}, #{starring,jdbcType=VARCHAR}, 
+      #{director,jdbcType=VARCHAR}, #{country,jdbcType=VARCHAR}, #{hasMosaic,jdbcType=BIT}, 
+      #{path,jdbcType=VARCHAR}, #{menuCode,jdbcType=VARCHAR}, #{playPermission,jdbcType=TINYINT}, 
+      #{views,jdbcType=BIGINT}, #{duration,jdbcType=TIME}, #{thumbPath,jdbcType=VARCHAR}, 
+      #{relatedImg,jdbcType=VARCHAR}, #{checkSum,jdbcType=VARCHAR}, #{approvalStatus,jdbcType=BIT}, 
+      #{isDeleted,jdbcType=BIT}, #{createUser,jdbcType=VARCHAR}, #{createDate,jdbcType=TIMESTAMP}, 
+      #{updateUser,jdbcType=VARCHAR}, #{updateDate,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.ranbo.vplaza.model.TVideoInfo">
+    <!-- @mbg.generated: generated automatically, do not modify! -->
+    insert into T_VIDEO_INFO
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        ID,
+      </if>
+      <if test="uniqueId != null">
+        UNIQUE_ID,
+      </if>
+      <if test="videoName != null">
+        VIDEO_NAME,
+      </if>
+      <if test="videoDesc != null">
+        VIDEO_DESC,
+      </if>
+      <if test="keyWord != null">
+        KEY_WORD,
+      </if>
+      <if test="videoNo != null">
+        VIDEO_NO,
+      </if>
+      <if test="releaseYear != null">
+        RELEASE_YEAR,
+      </if>
+      <if test="publisher != null">
+        PUBLISHER,
+      </if>
+      <if test="starring != null">
+        STARRING,
+      </if>
+      <if test="director != null">
+        DIRECTOR,
+      </if>
+      <if test="country != null">
+        COUNTRY,
+      </if>
+      <if test="hasMosaic != null">
+        HAS_MOSAIC,
+      </if>
+      <if test="path != null">
+        `PATH`,
+      </if>
+      <if test="menuCode != null">
+        MENU_CODE,
+      </if>
+      <if test="playPermission != null">
+        PLAY_PERMISSION,
+      </if>
+      <if test="views != null">
+        VIEWS,
+      </if>
+      <if test="duration != null">
+        DURATION,
+      </if>
+      <if test="thumbPath != null">
+        THUMB_PATH,
+      </if>
+      <if test="relatedImg != null">
+        RELATED_IMG,
+      </if>
+      <if test="checkSum != null">
+        CHECK_SUM,
+      </if>
+      <if test="approvalStatus != null">
+        APPROVAL_STATUS,
+      </if>
+      <if test="isDeleted != null">
+        IS_DELETED,
+      </if>
+      <if test="createUser != null">
+        CREATE_USER,
+      </if>
+      <if test="createDate != null">
+        CREATE_DATE,
+      </if>
+      <if test="updateUser != null">
+        UPDATE_USER,
+      </if>
+      <if test="updateDate != null">
+        UPDATE_DATE,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="uniqueId != null">
+        #{uniqueId,jdbcType=VARCHAR},
+      </if>
+      <if test="videoName != null">
+        #{videoName,jdbcType=VARCHAR},
+      </if>
+      <if test="videoDesc != null">
+        #{videoDesc,jdbcType=VARCHAR},
+      </if>
+      <if test="keyWord != null">
+        #{keyWord,jdbcType=VARCHAR},
+      </if>
+      <if test="videoNo != null">
+        #{videoNo,jdbcType=VARCHAR},
+      </if>
+      <if test="releaseYear != null">
+        #{releaseYear,jdbcType=DATE},
+      </if>
+      <if test="publisher != null">
+        #{publisher,jdbcType=VARCHAR},
+      </if>
+      <if test="starring != null">
+        #{starring,jdbcType=VARCHAR},
+      </if>
+      <if test="director != null">
+        #{director,jdbcType=VARCHAR},
+      </if>
+      <if test="country != null">
+        #{country,jdbcType=VARCHAR},
+      </if>
+      <if test="hasMosaic != null">
+        #{hasMosaic,jdbcType=BIT},
+      </if>
+      <if test="path != null">
+        #{path,jdbcType=VARCHAR},
+      </if>
+      <if test="menuCode != null">
+        #{menuCode,jdbcType=VARCHAR},
+      </if>
+      <if test="playPermission != null">
+        #{playPermission,jdbcType=TINYINT},
+      </if>
+      <if test="views != null">
+        #{views,jdbcType=BIGINT},
+      </if>
+      <if test="duration != null">
+        #{duration,jdbcType=TIME},
+      </if>
+      <if test="thumbPath != null">
+        #{thumbPath,jdbcType=VARCHAR},
+      </if>
+      <if test="relatedImg != null">
+        #{relatedImg,jdbcType=VARCHAR},
+      </if>
+      <if test="checkSum != null">
+        #{checkSum,jdbcType=VARCHAR},
+      </if>
+      <if test="approvalStatus != null">
+        #{approvalStatus,jdbcType=BIT},
+      </if>
+      <if test="isDeleted != null">
+        #{isDeleted,jdbcType=BIT},
+      </if>
+      <if test="createUser != null">
+        #{createUser,jdbcType=VARCHAR},
+      </if>
+      <if test="createDate != null">
+        #{createDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateUser != null">
+        #{updateUser,jdbcType=VARCHAR},
+      </if>
+      <if test="updateDate != null">
+        #{updateDate,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.ranbo.vplaza.model.TVideoInfo">
+    <!-- @mbg.generated: generated automatically, do not modify! -->
+    update T_VIDEO_INFO
+    <set>
+      <if test="uniqueId != null">
+        UNIQUE_ID = #{uniqueId,jdbcType=VARCHAR},
+      </if>
+      <if test="videoName != null">
+        VIDEO_NAME = #{videoName,jdbcType=VARCHAR},
+      </if>
+      <if test="videoDesc != null">
+        VIDEO_DESC = #{videoDesc,jdbcType=VARCHAR},
+      </if>
+      <if test="keyWord != null">
+        KEY_WORD = #{keyWord,jdbcType=VARCHAR},
+      </if>
+      <if test="videoNo != null">
+        VIDEO_NO = #{videoNo,jdbcType=VARCHAR},
+      </if>
+      <if test="releaseYear != null">
+        RELEASE_YEAR = #{releaseYear,jdbcType=DATE},
+      </if>
+      <if test="publisher != null">
+        PUBLISHER = #{publisher,jdbcType=VARCHAR},
+      </if>
+      <if test="starring != null">
+        STARRING = #{starring,jdbcType=VARCHAR},
+      </if>
+      <if test="director != null">
+        DIRECTOR = #{director,jdbcType=VARCHAR},
+      </if>
+      <if test="country != null">
+        COUNTRY = #{country,jdbcType=VARCHAR},
+      </if>
+      <if test="hasMosaic != null">
+        HAS_MOSAIC = #{hasMosaic,jdbcType=BIT},
+      </if>
+      <if test="path != null">
+        `PATH` = #{path,jdbcType=VARCHAR},
+      </if>
+      <if test="menuCode != null">
+        MENU_CODE = #{menuCode,jdbcType=VARCHAR},
+      </if>
+      <if test="playPermission != null">
+        PLAY_PERMISSION = #{playPermission,jdbcType=TINYINT},
+      </if>
+      <if test="views != null">
+        VIEWS = #{views,jdbcType=BIGINT},
+      </if>
+      <if test="duration != null">
+        DURATION = #{duration,jdbcType=TIME},
+      </if>
+      <if test="thumbPath != null">
+        THUMB_PATH = #{thumbPath,jdbcType=VARCHAR},
+      </if>
+      <if test="relatedImg != null">
+        RELATED_IMG = #{relatedImg,jdbcType=VARCHAR},
+      </if>
+      <if test="checkSum != null">
+        CHECK_SUM = #{checkSum,jdbcType=VARCHAR},
+      </if>
+      <if test="approvalStatus != null">
+        APPROVAL_STATUS = #{approvalStatus,jdbcType=BIT},
+      </if>
+      <if test="isDeleted != null">
+        IS_DELETED = #{isDeleted,jdbcType=BIT},
+      </if>
+      <if test="createUser != null">
+        CREATE_USER = #{createUser,jdbcType=VARCHAR},
+      </if>
+      <if test="createDate != null">
+        CREATE_DATE = #{createDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateUser != null">
+        UPDATE_USER = #{updateUser,jdbcType=VARCHAR},
+      </if>
+      <if test="updateDate != null">
+        UPDATE_DATE = #{updateDate,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where ID = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.ranbo.vplaza.model.TVideoInfo">
+    <!-- @mbg.generated: generated automatically, do not modify! -->
+    update T_VIDEO_INFO
+    set UNIQUE_ID = #{uniqueId,jdbcType=VARCHAR},
+      VIDEO_NAME = #{videoName,jdbcType=VARCHAR},
+      VIDEO_DESC = #{videoDesc,jdbcType=VARCHAR},
+      KEY_WORD = #{keyWord,jdbcType=VARCHAR},
+      VIDEO_NO = #{videoNo,jdbcType=VARCHAR},
+      RELEASE_YEAR = #{releaseYear,jdbcType=DATE},
+      PUBLISHER = #{publisher,jdbcType=VARCHAR},
+      STARRING = #{starring,jdbcType=VARCHAR},
+      DIRECTOR = #{director,jdbcType=VARCHAR},
+      COUNTRY = #{country,jdbcType=VARCHAR},
+      HAS_MOSAIC = #{hasMosaic,jdbcType=BIT},
+      `PATH` = #{path,jdbcType=VARCHAR},
+      MENU_CODE = #{menuCode,jdbcType=VARCHAR},
+      PLAY_PERMISSION = #{playPermission,jdbcType=TINYINT},
+      VIEWS = #{views,jdbcType=BIGINT},
+      DURATION = #{duration,jdbcType=TIME},
+      THUMB_PATH = #{thumbPath,jdbcType=VARCHAR},
+      RELATED_IMG = #{relatedImg,jdbcType=VARCHAR},
+      CHECK_SUM = #{checkSum,jdbcType=VARCHAR},
+      APPROVAL_STATUS = #{approvalStatus,jdbcType=BIT},
+      IS_DELETED = #{isDeleted,jdbcType=BIT},
+      CREATE_USER = #{createUser,jdbcType=VARCHAR},
+      CREATE_DATE = #{createDate,jdbcType=TIMESTAMP},
+      UPDATE_USER = #{updateUser,jdbcType=VARCHAR},
+      UPDATE_DATE = #{updateDate,jdbcType=TIMESTAMP}
+    where ID = #{id,jdbcType=BIGINT}
+  </update>
+  <select id="selectByPrimaryKeyWithLock" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    <!-- @mbg.generated: generated automatically, do not modify! -->
+    select 
+    <include refid="Base_Column_List" />
+    from T_VIDEO_INFO
+    where ID = #{id,jdbcType=BIGINT}
+    for update
+  </select>
+</mapper>

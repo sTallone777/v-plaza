@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MybatisBuilder.project.settings">
+    <option name="connectionInfoList">
+      <list>
+        <ConnectionInfo>
+          <option name="database" value="vplaza" />
+          <option name="description" value="" />
+          <option name="driverClass" value="" />
+          <option name="driverLibrary" value="" />
+          <option name="driverType" value="MySQL" />
+          <option name="host" value="127.0.0.1" />
+          <option name="id" value="0f9c901505f2466bbff256d536c34040" />
+          <option name="name" value="vplaza" />
+          <option name="port" value="3306" />
+          <option name="url" value="" />
+          <option name="userName" value="root" />
+        </ConnectionInfo>
+      </list>
+    </option>
+    <option name="defaultParameters">
+      <DefaultParameters>
+        <option name="renameConfig">
+          <Config>
+            <option name="mapperTypePattern" value="" />
+            <option name="exampleTypePattern" value="" />
+            <option name="sqlFileNamePattern" value="" />
+          </Config>
+        </option>
+        <option name="selectWithLockConfig">
+          <SelectWithLockConfig>
+            <option name="byPrimaryKeyWithLockOverride" value="" />
+            <option name="byExampleWithLockOverride" value="" />
+          </SelectWithLockConfig>
+        </option>
+      </DefaultParameters>
+    </option>
+    <option name="historyMap">
+      <map>
+        <entry key="JAVA_CLIENT_PACKAGE">
+          <value>
+            <list>
+              <option value="com.ranbo.vplaza.mapper" />
+              <option value="mapper" />
+            </list>
+          </value>
+        </entry>
+        <entry key="JAVA_MODEL_PACKAGE">
+          <value>
+            <list>
+              <option value="com.ranbo.vplaza.model" />
+              <option value="model" />
+            </list>
+          </value>
+        </entry>
+        <entry key="SQL_MAP_PACKAGE">
+          <value>
+            <list>
+              <option value="com.ranbo.vplaza.mapper" />
+              <option value="mapper" />
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="lastGeneratorParamWrapper">
+      <GeneratorParamWrapper>
+        <option name="databaseRemark" value="false" />
+        <option name="defaultTableConfigWrapper">
+          <TableConfigurationWrapper>
+            <option name="countByExampleStatementEnabled" value="false" />
+            <option name="deleteByExampleStatementEnabled" value="false" />
+            <option name="domainObjectRenamingRule">
+              <DomainObjectRenamingRule>
+                <option name="replaceString" value="" />
+                <option name="searchString" value="" />
+              </DomainObjectRenamingRule>
+            </option>
+            <option name="generatedKeyWrapper">
+              <GeneratedKeyWrapper>
+                <option name="column" value="" />
+              </GeneratedKeyWrapper>
+            </option>
+            <option name="selectByExampleStatementEnabled" value="false" />
+            <option name="updateByExampleStatementEnabled" value="false" />
+          </TableConfigurationWrapper>
+        </option>
+        <option name="javaClientConfig">
+          <JavaClientGeneratorConfiguration>
+            <option name="configurationType" value="XMLMAPPER" />
+            <option name="targetPackage" value="com.ranbo.vplaza.mapper" />
+            <option name="targetProject" value="C:\work\Git\v-plaza\vplaza\vplazasvr\vplaza-mapper\src\main\java" />
+          </JavaClientGeneratorConfiguration>
+        </option>
+        <option name="javaModelConfig">
+          <JavaModelGeneratorConfiguration>
+            <option name="targetPackage" value="com.ranbo.vplaza.model" />
+            <option name="targetProject" value="C:\work\Git\v-plaza\vplaza\vplazasvr\vplaza-model\src\main\java" />
+          </JavaModelGeneratorConfiguration>
+        </option>
+        <option name="selectedPlugins">
+          <map>
+            <entry key="com.chuntung.plugin.mybatis.builder.generator.plugins.MapperAnnotationPlugin">
+              <value>
+                <PluginConfigWrapper>
+                  <option name="json" value="{&quot;customAnnotationType&quot;:&quot;org.springframework.stereotype.Repository&quot;}" />
+                  <option name="type" value="com.chuntung.plugin.mybatis.builder.generator.plugins.MapperAnnotationPlugin$Config" />
+                </PluginConfigWrapper>
+              </value>
+            </entry>
+            <entry key="com.chuntung.plugin.mybatis.builder.generator.plugins.selectwithlock.SelectWithLockPlugin">
+              <value>
+                <PluginConfigWrapper>
+                  <option name="json" value="{&quot;byPrimaryKeyWithLockOverride&quot;:&quot;&quot;,&quot;byExampleWithLockOverride&quot;:&quot;&quot;,&quot;byPrimaryKeyWithLockEnabled&quot;:true,&quot;byExampleWithLockEnabled&quot;:false}" />
+                  <option name="type" value="com.chuntung.plugin.mybatis.builder.generator.plugins.selectwithlock.SelectWithLockConfig" />
+                </PluginConfigWrapper>
+              </value>
+            </entry>
+          </map>
+        </option>
+        <option name="sqlMapConfig">
+          <SqlMapGeneratorConfiguration>
+            <option name="targetPackage" value="com.ranbo.vplaza.mapper" />
+            <option name="targetProject" value="C:\work\Git\v-plaza\vplaza\vplazasvr\vplaza-mapper\src\main\java" />
+          </SqlMapGeneratorConfiguration>
+        </option>
+        <option name="trimStrings" value="false" />
+      </GeneratorParamWrapper>
+    </option>
+    <option name="tableInfoMap">
+      <map>
+        <entry key="vplaza#M_ADMIN_PERMISSION">
+          <value>
+            <TableInfo>
+              <option name="database" value="vplaza" />
+              <option name="domainName" value="MAdminPermission" />
+              <option name="tableComment" value="ç®¡ç�†å‘˜æ�ƒé™�è¡¨" />
+              <option name="tableName" value="M_ADMIN_PERMISSION" />
+            </TableInfo>
+          </value>
+        </entry>
+        <entry key="vplaza#M_BEHAVIOR">
+          <value>
+            <TableInfo>
+              <option name="database" value="vplaza" />
+              <option name="domainName" value="MBehavior" />
+              <option name="tableComment" value="è¡Œä¸ºç±»åž‹è¡¨" />
+              <option name="tableName" value="M_BEHAVIOR" />
+            </TableInfo>
+          </value>
+        </entry>
+        <entry key="vplaza#M_USER_PERMISSION">
+          <value>
+            <TableInfo>
+              <option name="database" value="vplaza" />
+              <option name="domainName" value="MUserPermission" />
+              <option name="tableComment" value="ç”¨æˆ·æ�ƒé™�è¡¨" />
+              <option name="tableName" value="M_USER_PERMISSION" />
+            </TableInfo>
+          </value>
+        </entry>
+        <entry key="vplaza#M_VIDEO_TYPE">
+          <value>
+            <TableInfo>
+              <option name="database" value="vplaza" />
+              <option name="domainName" value="MVideoType" />
+              <option name="tableComment" value="è§†é¢‘ç±»åž‹è¡¨" />
+              <option name="tableName" value="M_VIDEO_TYPE" />
+            </TableInfo>
+          </value>
+        </entry>
+        <entry key="vplaza#T_ADMIN_INFO">
+          <value>
+            <TableInfo>
+              <option name="database" value="vplaza" />
+              <option name="domainName" value="TAdminInfo" />
+              <option name="tableComment" value="ç®¡ç�†å‘˜ä¿¡æ�¯è¡¨" />
+              <option name="tableName" value="T_ADMIN_INFO" />
+            </TableInfo>
+          </value>
+        </entry>
+        <entry key="vplaza#T_MENU">
+          <value>
+            <TableInfo>
+              <option name="database" value="vplaza" />
+              <option name="domainName" value="TMenu" />
+              <option name="tableComment" value="åˆ†çº§è�œå�•è¡¨" />
+              <option name="tableName" value="T_MENU" />
+            </TableInfo>
+          </value>
+        </entry>
+        <entry key="vplaza#T_USER">
+          <value>
+            <TableInfo>
+              <option name="database" value="vplaza" />
+              <option name="domainName" value="TUser" />
+              <option name="tableComment" value="ç”¨æˆ·ç™»å½•ä¿¡æ�¯è¡¨" />
+              <option name="tableName" value="T_USER" />
+            </TableInfo>
+          </value>
+        </entry>
+        <entry key="vplaza#T_USER_ACCOUNT">
+          <value>
+            <TableInfo>
+              <option name="database" value="vplaza" />
+              <option name="domainName" value="TUserAccount" />
+              <option name="tableComment" value="ç”¨æˆ·è´¦æˆ·ä¿¡æ�¯è¡¨" />
+              <option name="tableName" value="T_USER_ACCOUNT" />
+            </TableInfo>
+          </value>
+        </entry>
+        <entry key="vplaza#T_USER_FAVORITE">
+          <value>
+            <TableInfo>
+              <option name="database" value="vplaza" />
+              <option name="domainName" value="TUserFavorite" />
+              <option name="tableComment" value="ç”¨æˆ·è¡Œä¸ºè®°å½•è¡¨" />
+              <option name="tableName" value="T_USER_FAVORITE" />
+            </TableInfo>
+          </value>
+        </entry>
+        <entry key="vplaza#T_VIDEO_INFO">
+          <value>
+            <TableInfo>
+              <option name="database" value="vplaza" />
+              <option name="domainName" value="TVideoInfo" />
+              <option name="tableComment" value="è§†é¢‘ä¿¡æ�¯è¡¨" />
+              <option name="tableName" value="T_VIDEO_INFO" />
+            </TableInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

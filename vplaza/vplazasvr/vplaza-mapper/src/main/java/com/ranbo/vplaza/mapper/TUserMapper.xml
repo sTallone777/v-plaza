@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ranbo.vplaza.mapper.TUserMapper">
+  <resultMap id="BaseResultMap" type="com.ranbo.vplaza.model.TUser">
+    <!-- @mbg.generated: generated automatically, do not modify! -->
+    <id column="ID" jdbcType="BIGINT" property="id" />
+    <result column="USER_NAME" jdbcType="VARCHAR" property="userName" />
+    <result column="USER_PASS" jdbcType="VARCHAR" property="userPass" />
+    <result column="UNIQUE_ID" jdbcType="VARCHAR" property="uniqueId" />
+    <result column="PERMISSION_CODE" jdbcType="TINYINT" property="permissionCode" />
+    <result column="LAST_LOGIN" jdbcType="TIMESTAMP" property="lastLogin" />
+    <result column="LAST_IPADDR" jdbcType="VARCHAR" property="lastIpaddr" />
+    <result column="OLD_PASS" jdbcType="VARCHAR" property="oldPass" />
+    <result column="AGE" jdbcType="TINYINT" property="age" />
+    <result column="SEX" jdbcType="VARCHAR" property="sex" />
+    <result column="COUNTRY" jdbcType="VARCHAR" property="country" />
+    <result column="EMAIL" jdbcType="VARCHAR" property="email" />
+    <result column="TEL" jdbcType="VARCHAR" property="tel" />
+    <result column="IS_DELETED" jdbcType="BIT" property="isDeleted" />
+    <result column="CREATE_USER" jdbcType="VARCHAR" property="createUser" />
+    <result column="CREATE_DATE" jdbcType="TIMESTAMP" property="createDate" />
+    <result column="UPDATE_USER" jdbcType="VARCHAR" property="updateUser" />
+    <result column="UPDATE_DATE" jdbcType="TIMESTAMP" property="updateDate" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!-- @mbg.generated: generated automatically, do not modify! -->
+    ID, USER_NAME, USER_PASS, UNIQUE_ID, PERMISSION_CODE, LAST_LOGIN, LAST_IPADDR, OLD_PASS, 
+    AGE, SEX, COUNTRY, EMAIL, TEL, IS_DELETED, CREATE_USER, CREATE_DATE, UPDATE_USER, 
+    UPDATE_DATE
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    <!-- @mbg.generated: generated automatically, do not modify! -->
+    select 
+    <include refid="Base_Column_List" />
+    from T_USER
+    where ID = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    <!-- @mbg.generated: generated automatically, do not modify! -->
+    delete from T_USER
+    where ID = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.ranbo.vplaza.model.TUser">
+    <!-- @mbg.generated: generated automatically, do not modify! -->
+    insert into T_USER (ID, USER_NAME, USER_PASS, 
+      UNIQUE_ID, PERMISSION_CODE, LAST_LOGIN, 
+      LAST_IPADDR, OLD_PASS, AGE, 
+      SEX, COUNTRY, EMAIL, 
+      TEL, IS_DELETED, CREATE_USER, 
+      CREATE_DATE, UPDATE_USER, UPDATE_DATE
+      )
+    values (#{id,jdbcType=BIGINT}, #{userName,jdbcType=VARCHAR}, #{userPass,jdbcType=VARCHAR}, 
+      #{uniqueId,jdbcType=VARCHAR}, #{permissionCode,jdbcType=TINYINT}, #{lastLogin,jdbcType=TIMESTAMP}, 
+      #{lastIpaddr,jdbcType=VARCHAR}, #{oldPass,jdbcType=VARCHAR}, #{age,jdbcType=TINYINT}, 
+      #{sex,jdbcType=VARCHAR}, #{country,jdbcType=VARCHAR}, #{email,jdbcType=VARCHAR}, 
+      #{tel,jdbcType=VARCHAR}, #{isDeleted,jdbcType=BIT}, #{createUser,jdbcType=VARCHAR}, 
+      #{createDate,jdbcType=TIMESTAMP}, #{updateUser,jdbcType=VARCHAR}, #{updateDate,jdbcType=TIMESTAMP}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.ranbo.vplaza.model.TUser">
+    <!-- @mbg.generated: generated automatically, do not modify! -->
+    insert into T_USER
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        ID,
+      </if>
+      <if test="userName != null">
+        USER_NAME,
+      </if>
+      <if test="userPass != null">
+        USER_PASS,
+      </if>
+      <if test="uniqueId != null">
+        UNIQUE_ID,
+      </if>
+      <if test="permissionCode != null">
+        PERMISSION_CODE,
+      </if>
+      <if test="lastLogin != null">
+        LAST_LOGIN,
+      </if>
+      <if test="lastIpaddr != null">
+        LAST_IPADDR,
+      </if>
+      <if test="oldPass != null">
+        OLD_PASS,
+      </if>
+      <if test="age != null">
+        AGE,
+      </if>
+      <if test="sex != null">
+        SEX,
+      </if>
+      <if test="country != null">
+        COUNTRY,
+      </if>
+      <if test="email != null">
+        EMAIL,
+      </if>
+      <if test="tel != null">
+        TEL,
+      </if>
+      <if test="isDeleted != null">
+        IS_DELETED,
+      </if>
+      <if test="createUser != null">
+        CREATE_USER,
+      </if>
+      <if test="createDate != null">
+        CREATE_DATE,
+      </if>
+      <if test="updateUser != null">
+        UPDATE_USER,
+      </if>
+      <if test="updateDate != null">
+        UPDATE_DATE,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="userName != null">
+        #{userName,jdbcType=VARCHAR},
+      </if>
+      <if test="userPass != null">
+        #{userPass,jdbcType=VARCHAR},
+      </if>
+      <if test="uniqueId != null">
+        #{uniqueId,jdbcType=VARCHAR},
+      </if>
+      <if test="permissionCode != null">
+        #{permissionCode,jdbcType=TINYINT},
+      </if>
+      <if test="lastLogin != null">
+        #{lastLogin,jdbcType=TIMESTAMP},
+      </if>
+      <if test="lastIpaddr != null">
+        #{lastIpaddr,jdbcType=VARCHAR},
+      </if>
+      <if test="oldPass != null">
+        #{oldPass,jdbcType=VARCHAR},
+      </if>
+      <if test="age != null">
+        #{age,jdbcType=TINYINT},
+      </if>
+      <if test="sex != null">
+        #{sex,jdbcType=VARCHAR},
+      </if>
+      <if test="country != null">
+        #{country,jdbcType=VARCHAR},
+      </if>
+      <if test="email != null">
+        #{email,jdbcType=VARCHAR},
+      </if>
+      <if test="tel != null">
+        #{tel,jdbcType=VARCHAR},
+      </if>
+      <if test="isDeleted != null">
+        #{isDeleted,jdbcType=BIT},
+      </if>
+      <if test="createUser != null">
+        #{createUser,jdbcType=VARCHAR},
+      </if>
+      <if test="createDate != null">
+        #{createDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateUser != null">
+        #{updateUser,jdbcType=VARCHAR},
+      </if>
+      <if test="updateDate != null">
+        #{updateDate,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.ranbo.vplaza.model.TUser">
+    <!-- @mbg.generated: generated automatically, do not modify! -->
+    update T_USER
+    <set>
+      <if test="userName != null">
+        USER_NAME = #{userName,jdbcType=VARCHAR},
+      </if>
+      <if test="userPass != null">
+        USER_PASS = #{userPass,jdbcType=VARCHAR},
+      </if>
+      <if test="uniqueId != null">
+        UNIQUE_ID = #{uniqueId,jdbcType=VARCHAR},
+      </if>
+      <if test="permissionCode != null">
+        PERMISSION_CODE = #{permissionCode,jdbcType=TINYINT},
+      </if>
+      <if test="lastLogin != null">
+        LAST_LOGIN = #{lastLogin,jdbcType=TIMESTAMP},
+      </if>
+      <if test="lastIpaddr != null">
+        LAST_IPADDR = #{lastIpaddr,jdbcType=VARCHAR},
+      </if>
+      <if test="oldPass != null">
+        OLD_PASS = #{oldPass,jdbcType=VARCHAR},
+      </if>
+      <if test="age != null">
+        AGE = #{age,jdbcType=TINYINT},
+      </if>
+      <if test="sex != null">
+        SEX = #{sex,jdbcType=VARCHAR},
+      </if>
+      <if test="country != null">
+        COUNTRY = #{country,jdbcType=VARCHAR},
+      </if>
+      <if test="email != null">
+        EMAIL = #{email,jdbcType=VARCHAR},
+      </if>
+      <if test="tel != null">
+        TEL = #{tel,jdbcType=VARCHAR},
+      </if>
+      <if test="isDeleted != null">
+        IS_DELETED = #{isDeleted,jdbcType=BIT},
+      </if>
+      <if test="createUser != null">
+        CREATE_USER = #{createUser,jdbcType=VARCHAR},
+      </if>
+      <if test="createDate != null">
+        CREATE_DATE = #{createDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateUser != null">
+        UPDATE_USER = #{updateUser,jdbcType=VARCHAR},
+      </if>
+      <if test="updateDate != null">
+        UPDATE_DATE = #{updateDate,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where ID = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.ranbo.vplaza.model.TUser">
+    <!-- @mbg.generated: generated automatically, do not modify! -->
+    update T_USER
+    set USER_NAME = #{userName,jdbcType=VARCHAR},
+      USER_PASS = #{userPass,jdbcType=VARCHAR},
+      UNIQUE_ID = #{uniqueId,jdbcType=VARCHAR},
+      PERMISSION_CODE = #{permissionCode,jdbcType=TINYINT},
+      LAST_LOGIN = #{lastLogin,jdbcType=TIMESTAMP},
+      LAST_IPADDR = #{lastIpaddr,jdbcType=VARCHAR},
+      OLD_PASS = #{oldPass,jdbcType=VARCHAR},
+      AGE = #{age,jdbcType=TINYINT},
+      SEX = #{sex,jdbcType=VARCHAR},
+      COUNTRY = #{country,jdbcType=VARCHAR},
+      EMAIL = #{email,jdbcType=VARCHAR},
+      TEL = #{tel,jdbcType=VARCHAR},
+      IS_DELETED = #{isDeleted,jdbcType=BIT},
+      CREATE_USER = #{createUser,jdbcType=VARCHAR},
+      CREATE_DATE = #{createDate,jdbcType=TIMESTAMP},
+      UPDATE_USER = #{updateUser,jdbcType=VARCHAR},
+      UPDATE_DATE = #{updateDate,jdbcType=TIMESTAMP}
+    where ID = #{id,jdbcType=BIGINT}
+  </update>
+  <select id="selectByPrimaryKeyWithLock" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    <!-- @mbg.generated: generated automatically, do not modify! -->
+    select 
+    <include refid="Base_Column_List" />
+    from T_USER
+    where ID = #{id,jdbcType=BIGINT}
+    for update
+  </select>
+</mapper>

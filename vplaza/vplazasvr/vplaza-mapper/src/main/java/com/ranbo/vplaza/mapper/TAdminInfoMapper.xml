@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ranbo.vplaza.mapper.TAdminInfoMapper">
+  <resultMap id="BaseResultMap" type="com.ranbo.vplaza.model.TAdminInfo">
+    <!-- @mbg.generated: generated automatically, do not modify! -->
+    <id column="ID" jdbcType="SMALLINT" property="id" />
+    <result column="ADMIN_NAME" jdbcType="VARCHAR" property="adminName" />
+    <result column="ADMIN_PASS" jdbcType="VARCHAR" property="adminPass" />
+    <result column="PERMISSION_CODE" jdbcType="TINYINT" property="permissionCode" />
+    <result column="LAST_LOGIN" jdbcType="TIMESTAMP" property="lastLogin" />
+    <result column="LAST_IPADDR" jdbcType="VARCHAR" property="lastIpaddr" />
+    <result column="OLD_PASS" jdbcType="VARCHAR" property="oldPass" />
+    <result column="IS_DELETED" jdbcType="BIT" property="isDeleted" />
+    <result column="CREATE_USER" jdbcType="VARCHAR" property="createUser" />
+    <result column="CREATE_DATE" jdbcType="TIMESTAMP" property="createDate" />
+    <result column="UPDATE_USER" jdbcType="VARCHAR" property="updateUser" />
+    <result column="UPDATE_DATE" jdbcType="TIMESTAMP" property="updateDate" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!-- @mbg.generated: generated automatically, do not modify! -->
+    ID, ADMIN_NAME, ADMIN_PASS, PERMISSION_CODE, LAST_LOGIN, LAST_IPADDR, OLD_PASS, IS_DELETED, 
+    CREATE_USER, CREATE_DATE, UPDATE_USER, UPDATE_DATE
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Short" resultMap="BaseResultMap">
+    <!-- @mbg.generated: generated automatically, do not modify! -->
+    select 
+    <include refid="Base_Column_List" />
+    from T_ADMIN_INFO
+    where ID = #{id,jdbcType=SMALLINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Short">
+    <!-- @mbg.generated: generated automatically, do not modify! -->
+    delete from T_ADMIN_INFO
+    where ID = #{id,jdbcType=SMALLINT}
+  </delete>
+  <insert id="insert" parameterType="com.ranbo.vplaza.model.TAdminInfo">
+    <!-- @mbg.generated: generated automatically, do not modify! -->
+    insert into T_ADMIN_INFO (ID, ADMIN_NAME, ADMIN_PASS, 
+      PERMISSION_CODE, LAST_LOGIN, LAST_IPADDR, 
+      OLD_PASS, IS_DELETED, CREATE_USER, 
+      CREATE_DATE, UPDATE_USER, UPDATE_DATE
+      )
+    values (#{id,jdbcType=SMALLINT}, #{adminName,jdbcType=VARCHAR}, #{adminPass,jdbcType=VARCHAR}, 
+      #{permissionCode,jdbcType=TINYINT}, #{lastLogin,jdbcType=TIMESTAMP}, #{lastIpaddr,jdbcType=VARCHAR}, 
+      #{oldPass,jdbcType=VARCHAR}, #{isDeleted,jdbcType=BIT}, #{createUser,jdbcType=VARCHAR}, 
+      #{createDate,jdbcType=TIMESTAMP}, #{updateUser,jdbcType=VARCHAR}, #{updateDate,jdbcType=TIMESTAMP}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.ranbo.vplaza.model.TAdminInfo">
+    <!-- @mbg.generated: generated automatically, do not modify! -->
+    insert into T_ADMIN_INFO
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        ID,
+      </if>
+      <if test="adminName != null">
+        ADMIN_NAME,
+      </if>
+      <if test="adminPass != null">
+        ADMIN_PASS,
+      </if>
+      <if test="permissionCode != null">
+        PERMISSION_CODE,
+      </if>
+      <if test="lastLogin != null">
+        LAST_LOGIN,
+      </if>
+      <if test="lastIpaddr != null">
+        LAST_IPADDR,
+      </if>
+      <if test="oldPass != null">
+        OLD_PASS,
+      </if>
+      <if test="isDeleted != null">
+        IS_DELETED,
+      </if>
+      <if test="createUser != null">
+        CREATE_USER,
+      </if>
+      <if test="createDate != null">
+        CREATE_DATE,
+      </if>
+      <if test="updateUser != null">
+        UPDATE_USER,
+      </if>
+      <if test="updateDate != null">
+        UPDATE_DATE,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=SMALLINT},
+      </if>
+      <if test="adminName != null">
+        #{adminName,jdbcType=VARCHAR},
+      </if>
+      <if test="adminPass != null">
+        #{adminPass,jdbcType=VARCHAR},
+      </if>
+      <if test="permissionCode != null">
+        #{permissionCode,jdbcType=TINYINT},
+      </if>
+      <if test="lastLogin != null">
+        #{lastLogin,jdbcType=TIMESTAMP},
+      </if>
+      <if test="lastIpaddr != null">
+        #{lastIpaddr,jdbcType=VARCHAR},
+      </if>
+      <if test="oldPass != null">
+        #{oldPass,jdbcType=VARCHAR},
+      </if>
+      <if test="isDeleted != null">
+        #{isDeleted,jdbcType=BIT},
+      </if>
+      <if test="createUser != null">
+        #{createUser,jdbcType=VARCHAR},
+      </if>
+      <if test="createDate != null">
+        #{createDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateUser != null">
+        #{updateUser,jdbcType=VARCHAR},
+      </if>
+      <if test="updateDate != null">
+        #{updateDate,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.ranbo.vplaza.model.TAdminInfo">
+    <!-- @mbg.generated: generated automatically, do not modify! -->
+    update T_ADMIN_INFO
+    <set>
+      <if test="adminName != null">
+        ADMIN_NAME = #{adminName,jdbcType=VARCHAR},
+      </if>
+      <if test="adminPass != null">
+        ADMIN_PASS = #{adminPass,jdbcType=VARCHAR},
+      </if>
+      <if test="permissionCode != null">
+        PERMISSION_CODE = #{permissionCode,jdbcType=TINYINT},
+      </if>
+      <if test="lastLogin != null">
+        LAST_LOGIN = #{lastLogin,jdbcType=TIMESTAMP},
+      </if>
+      <if test="lastIpaddr != null">
+        LAST_IPADDR = #{lastIpaddr,jdbcType=VARCHAR},
+      </if>
+      <if test="oldPass != null">
+        OLD_PASS = #{oldPass,jdbcType=VARCHAR},
+      </if>
+      <if test="isDeleted != null">
+        IS_DELETED = #{isDeleted,jdbcType=BIT},
+      </if>
+      <if test="createUser != null">
+        CREATE_USER = #{createUser,jdbcType=VARCHAR},
+      </if>
+      <if test="createDate != null">
+        CREATE_DATE = #{createDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateUser != null">
+        UPDATE_USER = #{updateUser,jdbcType=VARCHAR},
+      </if>
+      <if test="updateDate != null">
+        UPDATE_DATE = #{updateDate,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where ID = #{id,jdbcType=SMALLINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.ranbo.vplaza.model.TAdminInfo">
+    <!-- @mbg.generated: generated automatically, do not modify! -->
+    update T_ADMIN_INFO
+    set ADMIN_NAME = #{adminName,jdbcType=VARCHAR},
+      ADMIN_PASS = #{adminPass,jdbcType=VARCHAR},
+      PERMISSION_CODE = #{permissionCode,jdbcType=TINYINT},
+      LAST_LOGIN = #{lastLogin,jdbcType=TIMESTAMP},
+      LAST_IPADDR = #{lastIpaddr,jdbcType=VARCHAR},
+      OLD_PASS = #{oldPass,jdbcType=VARCHAR},
+      IS_DELETED = #{isDeleted,jdbcType=BIT},
+      CREATE_USER = #{createUser,jdbcType=VARCHAR},
+      CREATE_DATE = #{createDate,jdbcType=TIMESTAMP},
+      UPDATE_USER = #{updateUser,jdbcType=VARCHAR},
+      UPDATE_DATE = #{updateDate,jdbcType=TIMESTAMP}
+    where ID = #{id,jdbcType=SMALLINT}
+  </update>
+  <select id="selectByPrimaryKeyWithLock" parameterType="java.lang.Short" resultMap="BaseResultMap">
+    <!-- @mbg.generated: generated automatically, do not modify! -->
+    select 
+    <include refid="Base_Column_List" />
+    from T_ADMIN_INFO
+    where ID = #{id,jdbcType=SMALLINT}
+    for update
+  </select>
+</mapper>
