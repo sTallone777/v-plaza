@@ -3,8 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/vplaza.iml" filepath="$PROJECT_DIR$/vplaza.iml" />
-      <module fileurl="file://$PROJECT_DIR$/vplazasvr/vplaza-mapper/vplaza-mapper.iml" filepath="$PROJECT_DIR$/vplazasvr/vplaza-mapper/vplaza-mapper.iml" />
-      <module fileurl="file://$PROJECT_DIR$/vplazasvr/vplaza-model/vplaza-model.iml" filepath="$PROJECT_DIR$/vplazasvr/vplaza-model/vplaza-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vplazasvr/vplaza-api/vplaza-api.iml" filepath="$PROJECT_DIR$/vplazasvr/vplaza-api/vplaza-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vplazasvr/vplaza-app/vplaza-app.iml" filepath="$PROJECT_DIR$/vplazasvr/vplaza-app/vplaza-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vplazasvr/vplaza-common/vplaza-common.iml" filepath="$PROJECT_DIR$/vplazasvr/vplaza-common/vplaza-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/vplazasvr/vplazasvr.iml" filepath="$PROJECT_DIR$/vplazasvr/vplazasvr.iml" />
     </modules>
   </component>

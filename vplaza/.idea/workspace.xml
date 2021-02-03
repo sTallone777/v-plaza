@@ -23,10 +23,55 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d9da98e-4489-4e20-b05b-f01f8270fc7a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/mybatisbuilder.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_3_4_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_22.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_4_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_4_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_3_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_3_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vplazasvr/vplaza-mapper/src/main/java/com/ranbo/vplaza/VplazaMapperApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vplazasvr/vplaza-model/src/main/java/com/ranbo/vplaza/VplazaModelApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vplazasvr/vplaza-mapper/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vplazasvr/vplaza-mapper/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vplazasvr/vplaza-mapper/src/main/java/com/ranbo/vplaza/mapper/MAdminPermissionMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vplazasvr/vplaza-mapper/src/main/java/com/ranbo/vplaza/mapper/MAdminPermissionMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vplazasvr/vplaza-mapper/src/main/java/com/ranbo/vplaza/mapper/MBehaviorMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vplazasvr/vplaza-mapper/src/main/java/com/ranbo/vplaza/mapper/MBehaviorMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vplazasvr/vplaza-mapper/src/main/java/com/ranbo/vplaza/mapper/MUserPermissionMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vplazasvr/vplaza-mapper/src/main/java/com/ranbo/vplaza/mapper/MUserPermissionMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vplazasvr/vplaza-mapper/src/main/java/com/ranbo/vplaza/mapper/MVideoTypeMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vplazasvr/vplaza-mapper/src/main/java/com/ranbo/vplaza/mapper/MVideoTypeMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vplazasvr/vplaza-mapper/src/main/java/com/ranbo/vplaza/mapper/TAdminInfoMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vplazasvr/vplaza-mapper/src/main/java/com/ranbo/vplaza/mapper/TAdminInfoMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vplazasvr/vplaza-mapper/src/main/java/com/ranbo/vplaza/mapper/TMenuMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vplazasvr/vplaza-mapper/src/main/java/com/ranbo/vplaza/mapper/TMenuMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vplazasvr/vplaza-mapper/src/main/java/com/ranbo/vplaza/mapper/TUserAccountMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vplazasvr/vplaza-mapper/src/main/java/com/ranbo/vplaza/mapper/TUserAccountMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vplazasvr/vplaza-mapper/src/main/java/com/ranbo/vplaza/mapper/TUserFavoriteMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vplazasvr/vplaza-mapper/src/main/java/com/ranbo/vplaza/mapper/TUserFavoriteMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vplazasvr/vplaza-mapper/src/main/java/com/ranbo/vplaza/mapper/TUserMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vplazasvr/vplaza-mapper/src/main/java/com/ranbo/vplaza/mapper/TUserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vplazasvr/vplaza-mapper/src/main/java/com/ranbo/vplaza/mapper/TVideoInfoMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vplazasvr/vplaza-mapper/src/main/java/com/ranbo/vplaza/mapper/TVideoInfoMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vplazasvr/vplaza-mapper/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vplazasvr/vplaza-mapper/src/test/java/com/ranbo/vplaza/VplazaMapperApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vplazasvr/vplaza-model/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vplazasvr/vplaza-model/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vplazasvr/vplaza-model/src/main/java/com/ranbo/vplaza/model/MAdminPermission.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vplazasvr/vplaza-model/src/main/java/com/ranbo/vplaza/model/MBehavior.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vplazasvr/vplaza-model/src/main/java/com/ranbo/vplaza/model/MUserPermission.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vplazasvr/vplaza-model/src/main/java/com/ranbo/vplaza/model/MVideoType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vplazasvr/vplaza-model/src/main/java/com/ranbo/vplaza/model/TAdminInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vplazasvr/vplaza-model/src/main/java/com/ranbo/vplaza/model/TMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vplazasvr/vplaza-model/src/main/java/com/ranbo/vplaza/model/TUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vplazasvr/vplaza-model/src/main/java/com/ranbo/vplaza/model/TUserAccount.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vplazasvr/vplaza-model/src/main/java/com/ranbo/vplaza/model/TUserFavorite.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vplazasvr/vplaza-model/src/main/java/com/ranbo/vplaza/model/TVideoInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vplazasvr/vplaza-model/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vplazasvr/vplaza-model/src/test/java/com/ranbo/vplaza/VplazaModelApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,11 +96,11 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Java/vhr/vhr" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.externalResources" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -86,6 +131,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="1036" y="236" key="#Inspections" timestamp="1612331223458">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="1036" y="236" key="#Inspections/0.0.1920.1050@0.0.1920.1050" timestamp="1612331223458" />
     <state x="389" y="292" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1612272188761">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -94,29 +143,33 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="210" y="275" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1612049656077" />
-    <state x="740" y="280" key="FileChooserDialogImpl" timestamp="1612272778034">
+    <state x="708" y="253" key="FileChooserDialogImpl" timestamp="1612339810448">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="740" y="280" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1612272778034" />
+    <state x="708" y="253" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1612339810448" />
     <state x="60" y="263" key="IDE.errors.dialog" timestamp="1612050119078">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="60" y="263" key="IDE.errors.dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1612050119078" />
-    <state x="308" y="255" key="MyBatisBuilder.ParametersDialog" timestamp="1612273469264">
+    <state x="503" y="300" key="MyBatisBuilder.ParametersDialog" timestamp="1612339899508">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="308" y="255" key="MyBatisBuilder.ParametersDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1612273469264" />
+    <state x="503" y="300" key="MyBatisBuilder.ParametersDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1612339899508" />
     <state x="180" y="341" key="MyBatisBuilder.SettingsDialog" timestamp="1612271889949">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="180" y="341" key="MyBatisBuilder.SettingsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1612271889949" />
-    <state x="229" y="99" key="SettingsEditor" timestamp="1612273694036">
+    <state x="503" y="129" key="SettingsEditor" timestamp="1612339577375">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="229" y="99" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1612273694036" />
-    <state x="146" y="179" width="1251" height="669" key="new project wizard" timestamp="1612051874035">
+    <state x="503" y="129" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1612339577375" />
+    <state x="517" y="209" key="com.intellij.javaee.MapExternalResourceDialog" timestamp="1612314600649">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="146" y="179" width="1251" height="669" key="new project wizard/0.0.1920.1050@0.0.1920.1050" timestamp="1612051874035" />
+    <state x="517" y="209" key="com.intellij.javaee.MapExternalResourceDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1612314600649" />
+    <state x="669" y="130" width="1251" height="669" key="new project wizard" timestamp="1612339455797">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="669" y="130" width="1251" height="669" key="new project wizard/0.0.1920.1050@0.0.1920.1050" timestamp="1612339455797" />
   </component>
 </project>
