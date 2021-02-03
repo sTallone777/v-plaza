@@ -1,0 +1,15 @@
+spring:
+  flyway:
+    enabled: false
+  datasource:
+#    type: com.alibaba.druid.pool.DruidDataSource
+    username: root
+    password: 123456
+    url: jdbc:mysql://localhost:3306/vplaza
+server:
+  port: 8181
+  compression:
+    enabled: true
+
+
+
