@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ranbo.vplaza.db.mapper.TMenuMapper">
+  <resultMap id="BaseResultMap" type="com.ranbo.vplaza.db.model.TMenu">
+    <!-- @mbg.generated: generated automatically, do not modify! -->
+    <id column="ID" jdbcType="SMALLINT" property="id" />
+    <result column="MENU_NAME" jdbcType="VARCHAR" property="menuName" />
+    <result column="MENU_CODE" jdbcType="VARCHAR" property="menuCode" />
+    <result column="MENU_LEVEL" jdbcType="TINYINT" property="menuLevel" />
+    <result column="IS_CHILD" jdbcType="BIT" property="isChild" />
+    <result column="HAS_CHILD" jdbcType="BIT" property="hasChild" />
+    <result column="PARENT_CODE" jdbcType="VARCHAR" property="parentCode" />
+    <result column="USER_PERMISSION" jdbcType="TINYINT" property="userPermission" />
+    <result column="IS_DELETED" jdbcType="BIT" property="isDeleted" />
+    <result column="CREATE_USER" jdbcType="VARCHAR" property="createUser" />
+    <result column="CREATE_DATE" jdbcType="TIMESTAMP" property="createDate" />
+    <result column="UPDATE_USER" jdbcType="VARCHAR" property="updateUser" />
+    <result column="UPDATE_DATE" jdbcType="TIMESTAMP" property="updateDate" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!-- @mbg.generated: generated automatically, do not modify! -->
+    ID, MENU_NAME, MENU_CODE, MENU_LEVEL, IS_CHILD, HAS_CHILD, PARENT_CODE, USER_PERMISSION, 
+    IS_DELETED, CREATE_USER, CREATE_DATE, UPDATE_USER, UPDATE_DATE
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Short" resultMap="BaseResultMap">
+    <!-- @mbg.generated: generated automatically, do not modify! -->
+    select 
+    <include refid="Base_Column_List" />
+    from T_MENU
+    where ID = #{id,jdbcType=SMALLINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Short">
+    <!-- @mbg.generated: generated automatically, do not modify! -->
+    delete from T_MENU
+    where ID = #{id,jdbcType=SMALLINT}
+  </delete>
+  <insert id="insert" parameterType="com.ranbo.vplaza.db.model.TMenu">
+    <!-- @mbg.generated: generated automatically, do not modify! -->
+    insert into T_MENU (ID, MENU_NAME, MENU_CODE, 
+      MENU_LEVEL, IS_CHILD, HAS_CHILD, 
+      PARENT_CODE, USER_PERMISSION, IS_DELETED, 
+      CREATE_USER, CREATE_DATE, UPDATE_USER, 
+      UPDATE_DATE)
+    values (#{id,jdbcType=SMALLINT}, #{menuName,jdbcType=VARCHAR}, #{menuCode,jdbcType=VARCHAR}, 
+      #{menuLevel,jdbcType=TINYINT}, #{isChild,jdbcType=BIT}, #{hasChild,jdbcType=BIT}, 
+      #{parentCode,jdbcType=VARCHAR}, #{userPermission,jdbcType=TINYINT}, #{isDeleted,jdbcType=BIT}, 
+      #{createUser,jdbcType=VARCHAR}, #{createDate,jdbcType=TIMESTAMP}, #{updateUser,jdbcType=VARCHAR}, 
+      #{updateDate,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.ranbo.vplaza.db.model.TMenu">
+    <!-- @mbg.generated: generated automatically, do not modify! -->
+    insert into T_MENU
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        ID,
+      </if>
+      <if test="menuName != null">
+        MENU_NAME,
+      </if>
+      <if test="menuCode != null">
+        MENU_CODE,
+      </if>
+      <if test="menuLevel != null">
+        MENU_LEVEL,
+      </if>
+      <if test="isChild != null">
+        IS_CHILD,
+      </if>
+      <if test="hasChild != null">
+        HAS_CHILD,
+      </if>
+      <if test="parentCode != null">
+        PARENT_CODE,
+      </if>
+      <if test="userPermission != null">
+        USER_PERMISSION,
+      </if>
+      <if test="isDeleted != null">
+        IS_DELETED,
+      </if>
+      <if test="createUser != null">
+        CREATE_USER,
+      </if>
+      <if test="createDate != null">
+        CREATE_DATE,
+      </if>
+      <if test="updateUser != null">
+        UPDATE_USER,
+      </if>
+      <if test="updateDate != null">
+        UPDATE_DATE,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=SMALLINT},
+      </if>
+      <if test="menuName != null">
+        #{menuName,jdbcType=VARCHAR},
+      </if>
+      <if test="menuCode != null">
+        #{menuCode,jdbcType=VARCHAR},
+      </if>
+      <if test="menuLevel != null">
+        #{menuLevel,jdbcType=TINYINT},
+      </if>
+      <if test="isChild != null">
+        #{isChild,jdbcType=BIT},
+      </if>
+      <if test="hasChild != null">
+        #{hasChild,jdbcType=BIT},
+      </if>
+      <if test="parentCode != null">
+        #{parentCode,jdbcType=VARCHAR},
+      </if>
+      <if test="userPermission != null">
+        #{userPermission,jdbcType=TINYINT},
+      </if>
+      <if test="isDeleted != null">
+        #{isDeleted,jdbcType=BIT},
+      </if>
+      <if test="createUser != null">
+        #{createUser,jdbcType=VARCHAR},
+      </if>
+      <if test="createDate != null">
+        #{createDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateUser != null">
+        #{updateUser,jdbcType=VARCHAR},
+      </if>
+      <if test="updateDate != null">
+        #{updateDate,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.ranbo.vplaza.db.model.TMenu">
+    <!-- @mbg.generated: generated automatically, do not modify! -->
+    update T_MENU
+    <set>
+      <if test="menuName != null">
+        MENU_NAME = #{menuName,jdbcType=VARCHAR},
+      </if>
+      <if test="menuCode != null">
+        MENU_CODE = #{menuCode,jdbcType=VARCHAR},
+      </if>
+      <if test="menuLevel != null">
+        MENU_LEVEL = #{menuLevel,jdbcType=TINYINT},
+      </if>
+      <if test="isChild != null">
+        IS_CHILD = #{isChild,jdbcType=BIT},
+      </if>
+      <if test="hasChild != null">
+        HAS_CHILD = #{hasChild,jdbcType=BIT},
+      </if>
+      <if test="parentCode != null">
+        PARENT_CODE = #{parentCode,jdbcType=VARCHAR},
+      </if>
+      <if test="userPermission != null">
+        USER_PERMISSION = #{userPermission,jdbcType=TINYINT},
+      </if>
+      <if test="isDeleted != null">
+        IS_DELETED = #{isDeleted,jdbcType=BIT},
+      </if>
+      <if test="createUser != null">
+        CREATE_USER = #{createUser,jdbcType=VARCHAR},
+      </if>
+      <if test="createDate != null">
+        CREATE_DATE = #{createDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateUser != null">
+        UPDATE_USER = #{updateUser,jdbcType=VARCHAR},
+      </if>
+      <if test="updateDate != null">
+        UPDATE_DATE = #{updateDate,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where ID = #{id,jdbcType=SMALLINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.ranbo.vplaza.db.model.TMenu">
+    <!-- @mbg.generated: generated automatically, do not modify! -->
+    update T_MENU
+    set MENU_NAME = #{menuName,jdbcType=VARCHAR},
+      MENU_CODE = #{menuCode,jdbcType=VARCHAR},
+      MENU_LEVEL = #{menuLevel,jdbcType=TINYINT},
+      IS_CHILD = #{isChild,jdbcType=BIT},
+      HAS_CHILD = #{hasChild,jdbcType=BIT},
+      PARENT_CODE = #{parentCode,jdbcType=VARCHAR},
+      USER_PERMISSION = #{userPermission,jdbcType=TINYINT},
+      IS_DELETED = #{isDeleted,jdbcType=BIT},
+      CREATE_USER = #{createUser,jdbcType=VARCHAR},
+      CREATE_DATE = #{createDate,jdbcType=TIMESTAMP},
+      UPDATE_USER = #{updateUser,jdbcType=VARCHAR},
+      UPDATE_DATE = #{updateDate,jdbcType=TIMESTAMP}
+    where ID = #{id,jdbcType=SMALLINT}
+  </update>
+  <select id="selectByPrimaryKeyWithLock" parameterType="java.lang.Short" resultMap="BaseResultMap">
+    <!-- @mbg.generated: generated automatically, do not modify! -->
+    select 
+    <include refid="Base_Column_List" />
+    from T_MENU
+    where ID = #{id,jdbcType=SMALLINT}
+    for update
+  </select>
+</mapper>

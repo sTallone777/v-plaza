@@ -10,7 +10,7 @@
           <option name="driverLibrary" value="" />
           <option name="driverType" value="MySQL" />
           <option name="host" value="127.0.0.1" />
-          <option name="id" value="0f9c901505f2466bbff256d536c34040" />
+          <option name="id" value="b551610902e543f4a138ffce4d0a31fa" />
           <option name="name" value="vplaza" />
           <option name="port" value="3306" />
           <option name="url" value="" />
@@ -40,26 +40,21 @@
         <entry key="JAVA_CLIENT_PACKAGE">
           <value>
             <list>
-              <option value="com.ranbo.vplaza.mapper" />
-              <option value="com.ranbo.vplaza.xml" />
-              <option value="mapper" />
+              <option value="com.ranbo.vplaza.db.mapper" />
             </list>
           </value>
         </entry>
         <entry key="JAVA_MODEL_PACKAGE">
           <value>
             <list>
-              <option value="com.ranbo.vplaza.model" />
-              <option value="model" />
+              <option value="com.ranbo.vplaza.db.model" />
             </list>
           </value>
         </entry>
         <entry key="SQL_MAP_PACKAGE">
           <value>
             <list>
-              <option value="com.ranbo.vplaza.xml" />
-              <option value="com.ranbo.vplaza.mapper" />
-              <option value="mapper" />
+              <option value="com.ranbo.vplaza.db.sqlmap" />
             </list>
           </value>
         </entry>
@@ -67,7 +62,6 @@
     </option>
     <option name="lastGeneratorParamWrapper">
       <GeneratorParamWrapper>
-        <option name="databaseRemark" value="false" />
         <option name="defaultTableConfigWrapper">
           <TableConfigurationWrapper>
             <option name="countByExampleStatementEnabled" value="false" />
@@ -90,26 +84,18 @@
         <option name="javaClientConfig">
           <JavaClientGeneratorConfiguration>
             <option name="configurationType" value="XMLMAPPER" />
-            <option name="targetPackage" value="com.ranbo.vplaza.mapper" />
-            <option name="targetProject" value="C:\work\Git\v-plaza\vplaza\vplazasvr\vplaza-common\src\main\java" />
+            <option name="targetPackage" value="com.ranbo.vplaza.db.mapper" />
+            <option name="targetProject" value="D:\work\Java\vplaza\vplazasvr\vplaza-common\src\main\java" />
           </JavaClientGeneratorConfiguration>
         </option>
         <option name="javaModelConfig">
           <JavaModelGeneratorConfiguration>
-            <option name="targetPackage" value="com.ranbo.vplaza.model" />
-            <option name="targetProject" value="C:\work\Git\v-plaza\vplaza\vplazasvr\vplaza-common\src\main\java" />
+            <option name="targetPackage" value="com.ranbo.vplaza.db.model" />
+            <option name="targetProject" value="D:\work\Java\vplaza\vplazasvr\vplaza-common\src\main\java" />
           </JavaModelGeneratorConfiguration>
         </option>
         <option name="selectedPlugins">
           <map>
-            <entry key="com.chuntung.plugin.mybatis.builder.generator.plugins.MapperAnnotationPlugin">
-              <value>
-                <PluginConfigWrapper>
-                  <option name="json" value="{&quot;customAnnotationType&quot;:&quot;org.springframework.stereotype.Repository&quot;}" />
-                  <option name="type" value="com.chuntung.plugin.mybatis.builder.generator.plugins.MapperAnnotationPlugin$Config" />
-                </PluginConfigWrapper>
-              </value>
-            </entry>
             <entry key="com.chuntung.plugin.mybatis.builder.generator.plugins.selectwithlock.SelectWithLockPlugin">
               <value>
                 <PluginConfigWrapper>
@@ -122,11 +108,10 @@
         </option>
         <option name="sqlMapConfig">
           <SqlMapGeneratorConfiguration>
-            <option name="targetPackage" value="com.ranbo.vplaza.xml" />
-            <option name="targetProject" value="C:\work\Git\v-plaza\vplaza\vplazasvr\vplaza-common\src\main\java" />
+            <option name="targetPackage" value="com.ranbo.vplaza.db.sqlmap" />
+            <option name="targetProject" value="D:\work\Java\vplaza\vplazasvr\vplaza-common\src\main\java" />
           </SqlMapGeneratorConfiguration>
         </option>
-        <option name="trimStrings" value="false" />
       </GeneratorParamWrapper>
     </option>
     <option name="tableInfoMap">

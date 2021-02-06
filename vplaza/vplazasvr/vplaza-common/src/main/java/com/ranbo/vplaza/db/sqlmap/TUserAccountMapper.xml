@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ranbo.vplaza.db.mapper.TUserAccountMapper">
+  <resultMap id="BaseResultMap" type="com.ranbo.vplaza.db.model.TUserAccount">
+    <!-- @mbg.generated: generated automatically, do not modify! -->
+    <id column="ID" jdbcType="BIGINT" property="id" />
+    <result column="UNIQUE_ID" jdbcType="VARCHAR" property="uniqueId" />
+    <result column="BEHAVIOR_CODE" jdbcType="SMALLINT" property="behaviorCode" />
+    <result column="BEHAVIOR_OBJ" jdbcType="VARCHAR" property="behaviorObj" />
+    <result column="AMOUNT" jdbcType="INTEGER" property="amount" />
+    <result column="IS_DELETED" jdbcType="BIT" property="isDeleted" />
+    <result column="CREATE_USER" jdbcType="VARCHAR" property="createUser" />
+    <result column="CREATE_DATE" jdbcType="TIMESTAMP" property="createDate" />
+    <result column="UPDATE_USER" jdbcType="VARCHAR" property="updateUser" />
+    <result column="UPDATE_DATE" jdbcType="TIMESTAMP" property="updateDate" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!-- @mbg.generated: generated automatically, do not modify! -->
+    ID, UNIQUE_ID, BEHAVIOR_CODE, BEHAVIOR_OBJ, AMOUNT, IS_DELETED, CREATE_USER, CREATE_DATE, 
+    UPDATE_USER, UPDATE_DATE
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    <!-- @mbg.generated: generated automatically, do not modify! -->
+    select 
+    <include refid="Base_Column_List" />
+    from T_USER_ACCOUNT
+    where ID = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    <!-- @mbg.generated: generated automatically, do not modify! -->
+    delete from T_USER_ACCOUNT
+    where ID = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.ranbo.vplaza.db.model.TUserAccount">
+    <!-- @mbg.generated: generated automatically, do not modify! -->
+    insert into T_USER_ACCOUNT (ID, UNIQUE_ID, BEHAVIOR_CODE, 
+      BEHAVIOR_OBJ, AMOUNT, IS_DELETED, 
+      CREATE_USER, CREATE_DATE, UPDATE_USER, 
+      UPDATE_DATE)
+    values (#{id,jdbcType=BIGINT}, #{uniqueId,jdbcType=VARCHAR}, #{behaviorCode,jdbcType=SMALLINT}, 
+      #{behaviorObj,jdbcType=VARCHAR}, #{amount,jdbcType=INTEGER}, #{isDeleted,jdbcType=BIT}, 
+      #{createUser,jdbcType=VARCHAR}, #{createDate,jdbcType=TIMESTAMP}, #{updateUser,jdbcType=VARCHAR}, 
+      #{updateDate,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.ranbo.vplaza.db.model.TUserAccount">
+    <!-- @mbg.generated: generated automatically, do not modify! -->
+    insert into T_USER_ACCOUNT
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        ID,
+      </if>
+      <if test="uniqueId != null">
+        UNIQUE_ID,
+      </if>
+      <if test="behaviorCode != null">
+        BEHAVIOR_CODE,
+      </if>
+      <if test="behaviorObj != null">
+        BEHAVIOR_OBJ,
+      </if>
+      <if test="amount != null">
+        AMOUNT,
+      </if>
+      <if test="isDeleted != null">
+        IS_DELETED,
+      </if>
+      <if test="createUser != null">
+        CREATE_USER,
+      </if>
+      <if test="createDate != null">
+        CREATE_DATE,
+      </if>
+      <if test="updateUser != null">
+        UPDATE_USER,
+      </if>
+      <if test="updateDate != null">
+        UPDATE_DATE,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="uniqueId != null">
+        #{uniqueId,jdbcType=VARCHAR},
+      </if>
+      <if test="behaviorCode != null">
+        #{behaviorCode,jdbcType=SMALLINT},
+      </if>
+      <if test="behaviorObj != null">
+        #{behaviorObj,jdbcType=VARCHAR},
+      </if>
+      <if test="amount != null">
+        #{amount,jdbcType=INTEGER},
+      </if>
+      <if test="isDeleted != null">
+        #{isDeleted,jdbcType=BIT},
+      </if>
+      <if test="createUser != null">
+        #{createUser,jdbcType=VARCHAR},
+      </if>
+      <if test="createDate != null">
+        #{createDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateUser != null">
+        #{updateUser,jdbcType=VARCHAR},
+      </if>
+      <if test="updateDate != null">
+        #{updateDate,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.ranbo.vplaza.db.model.TUserAccount">
+    <!-- @mbg.generated: generated automatically, do not modify! -->
+    update T_USER_ACCOUNT
+    <set>
+      <if test="uniqueId != null">
+        UNIQUE_ID = #{uniqueId,jdbcType=VARCHAR},
+      </if>
+      <if test="behaviorCode != null">
+        BEHAVIOR_CODE = #{behaviorCode,jdbcType=SMALLINT},
+      </if>
+      <if test="behaviorObj != null">
+        BEHAVIOR_OBJ = #{behaviorObj,jdbcType=VARCHAR},
+      </if>
+      <if test="amount != null">
+        AMOUNT = #{amount,jdbcType=INTEGER},
+      </if>
+      <if test="isDeleted != null">
+        IS_DELETED = #{isDeleted,jdbcType=BIT},
+      </if>
+      <if test="createUser != null">
+        CREATE_USER = #{createUser,jdbcType=VARCHAR},
+      </if>
+      <if test="createDate != null">
+        CREATE_DATE = #{createDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateUser != null">
+        UPDATE_USER = #{updateUser,jdbcType=VARCHAR},
+      </if>
+      <if test="updateDate != null">
+        UPDATE_DATE = #{updateDate,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where ID = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.ranbo.vplaza.db.model.TUserAccount">
+    <!-- @mbg.generated: generated automatically, do not modify! -->
+    update T_USER_ACCOUNT
+    set UNIQUE_ID = #{uniqueId,jdbcType=VARCHAR},
+      BEHAVIOR_CODE = #{behaviorCode,jdbcType=SMALLINT},
+      BEHAVIOR_OBJ = #{behaviorObj,jdbcType=VARCHAR},
+      AMOUNT = #{amount,jdbcType=INTEGER},
+      IS_DELETED = #{isDeleted,jdbcType=BIT},
+      CREATE_USER = #{createUser,jdbcType=VARCHAR},
+      CREATE_DATE = #{createDate,jdbcType=TIMESTAMP},
+      UPDATE_USER = #{updateUser,jdbcType=VARCHAR},
+      UPDATE_DATE = #{updateDate,jdbcType=TIMESTAMP}
+    where ID = #{id,jdbcType=BIGINT}
+  </update>
+  <select id="selectByPrimaryKeyWithLock" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    <!-- @mbg.generated: generated automatically, do not modify! -->
+    select 
+    <include refid="Base_Column_List" />
+    from T_USER_ACCOUNT
+    where ID = #{id,jdbcType=BIGINT}
+    for update
+  </select>
+</mapper>

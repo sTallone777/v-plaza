@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ranbo.vplaza.db.mapper.MVideoTypeMapper">
+  <resultMap id="BaseResultMap" type="com.ranbo.vplaza.db.model.MVideoType">
+    <!-- @mbg.generated: generated automatically, do not modify! -->
+    <id column="ID" jdbcType="SMALLINT" property="id" />
+    <result column="TYPE_NAME" jdbcType="VARCHAR" property="typeName" />
+    <result column="TYPE_CODE" jdbcType="SMALLINT" property="typeCode" />
+    <result column="TYPE_EXT" jdbcType="VARCHAR" property="typeExt" />
+    <result column="ICON_PATH" jdbcType="VARCHAR" property="iconPath" />
+    <result column="CREATE_USER" jdbcType="VARCHAR" property="createUser" />
+    <result column="CREATE_DATE" jdbcType="TIMESTAMP" property="createDate" />
+    <result column="UPDATE_USER" jdbcType="VARCHAR" property="updateUser" />
+    <result column="UPDATE_DATE" jdbcType="TIMESTAMP" property="updateDate" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!-- @mbg.generated: generated automatically, do not modify! -->
+    ID, TYPE_NAME, TYPE_CODE, TYPE_EXT, ICON_PATH, CREATE_USER, CREATE_DATE, UPDATE_USER, 
+    UPDATE_DATE
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Short" resultMap="BaseResultMap">
+    <!-- @mbg.generated: generated automatically, do not modify! -->
+    select 
+    <include refid="Base_Column_List" />
+    from M_VIDEO_TYPE
+    where ID = #{id,jdbcType=SMALLINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Short">
+    <!-- @mbg.generated: generated automatically, do not modify! -->
+    delete from M_VIDEO_TYPE
+    where ID = #{id,jdbcType=SMALLINT}
+  </delete>
+  <insert id="insert" parameterType="com.ranbo.vplaza.db.model.MVideoType">
+    <!-- @mbg.generated: generated automatically, do not modify! -->
+    insert into M_VIDEO_TYPE (ID, TYPE_NAME, TYPE_CODE, 
+      TYPE_EXT, ICON_PATH, CREATE_USER, 
+      CREATE_DATE, UPDATE_USER, UPDATE_DATE
+      )
+    values (#{id,jdbcType=SMALLINT}, #{typeName,jdbcType=VARCHAR}, #{typeCode,jdbcType=SMALLINT}, 
+      #{typeExt,jdbcType=VARCHAR}, #{iconPath,jdbcType=VARCHAR}, #{createUser,jdbcType=VARCHAR}, 
+      #{createDate,jdbcType=TIMESTAMP}, #{updateUser,jdbcType=VARCHAR}, #{updateDate,jdbcType=TIMESTAMP}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.ranbo.vplaza.db.model.MVideoType">
+    <!-- @mbg.generated: generated automatically, do not modify! -->
+    insert into M_VIDEO_TYPE
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        ID,
+      </if>
+      <if test="typeName != null">
+        TYPE_NAME,
+      </if>
+      <if test="typeCode != null">
+        TYPE_CODE,
+      </if>
+      <if test="typeExt != null">
+        TYPE_EXT,
+      </if>
+      <if test="iconPath != null">
+        ICON_PATH,
+      </if>
+      <if test="createUser != null">
+        CREATE_USER,
+      </if>
+      <if test="createDate != null">
+        CREATE_DATE,
+      </if>
+      <if test="updateUser != null">
+        UPDATE_USER,
+      </if>
+      <if test="updateDate != null">
+        UPDATE_DATE,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=SMALLINT},
+      </if>
+      <if test="typeName != null">
+        #{typeName,jdbcType=VARCHAR},
+      </if>
+      <if test="typeCode != null">
+        #{typeCode,jdbcType=SMALLINT},
+      </if>
+      <if test="typeExt != null">
+        #{typeExt,jdbcType=VARCHAR},
+      </if>
+      <if test="iconPath != null">
+        #{iconPath,jdbcType=VARCHAR},
+      </if>
+      <if test="createUser != null">
+        #{createUser,jdbcType=VARCHAR},
+      </if>
+      <if test="createDate != null">
+        #{createDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateUser != null">
+        #{updateUser,jdbcType=VARCHAR},
+      </if>
+      <if test="updateDate != null">
+        #{updateDate,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.ranbo.vplaza.db.model.MVideoType">
+    <!-- @mbg.generated: generated automatically, do not modify! -->
+    update M_VIDEO_TYPE
+    <set>
+      <if test="typeName != null">
+        TYPE_NAME = #{typeName,jdbcType=VARCHAR},
+      </if>
+      <if test="typeCode != null">
+        TYPE_CODE = #{typeCode,jdbcType=SMALLINT},
+      </if>
+      <if test="typeExt != null">
+        TYPE_EXT = #{typeExt,jdbcType=VARCHAR},
+      </if>
+      <if test="iconPath != null">
+        ICON_PATH = #{iconPath,jdbcType=VARCHAR},
+      </if>
+      <if test="createUser != null">
+        CREATE_USER = #{createUser,jdbcType=VARCHAR},
+      </if>
+      <if test="createDate != null">
+        CREATE_DATE = #{createDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateUser != null">
+        UPDATE_USER = #{updateUser,jdbcType=VARCHAR},
+      </if>
+      <if test="updateDate != null">
+        UPDATE_DATE = #{updateDate,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where ID = #{id,jdbcType=SMALLINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.ranbo.vplaza.db.model.MVideoType">
+    <!-- @mbg.generated: generated automatically, do not modify! -->
+    update M_VIDEO_TYPE
+    set TYPE_NAME = #{typeName,jdbcType=VARCHAR},
+      TYPE_CODE = #{typeCode,jdbcType=SMALLINT},
+      TYPE_EXT = #{typeExt,jdbcType=VARCHAR},
+      ICON_PATH = #{iconPath,jdbcType=VARCHAR},
+      CREATE_USER = #{createUser,jdbcType=VARCHAR},
+      CREATE_DATE = #{createDate,jdbcType=TIMESTAMP},
+      UPDATE_USER = #{updateUser,jdbcType=VARCHAR},
+      UPDATE_DATE = #{updateDate,jdbcType=TIMESTAMP}
+    where ID = #{id,jdbcType=SMALLINT}
+  </update>
+  <select id="selectByPrimaryKeyWithLock" parameterType="java.lang.Short" resultMap="BaseResultMap">
+    <!-- @mbg.generated: generated automatically, do not modify! -->
+    select 
+    <include refid="Base_Column_List" />
+    from M_VIDEO_TYPE
+    where ID = #{id,jdbcType=SMALLINT}
+    for update
+  </select>
+</mapper>

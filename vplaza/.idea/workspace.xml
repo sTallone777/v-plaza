@@ -3,34 +3,8 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
-  <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
-    <select />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="4d9da98e-4489-4e20-b05b-f01f8270fc7a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/vplazasvr/vplaza-app/src/main/java/com/ranbo/vplaza/app/controller/test/AopLogTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vplazasvr/vplaza-common/src/main/java/com/ranbo/vplaza/annotation/Log.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vplazasvr/vplaza-common/src/main/java/com/ranbo/vplaza/util/LogAspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vplazasvr/vplaza-app/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/vplazasvr/vplaza-app/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vplazasvr/vplaza-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vplazasvr/vplaza-common/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="e75780a3-8911-4b5f-8322-eb7c0cdf391a" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,48 +14,40 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
-        <option value="Interface" />
       </list>
     </option>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.3\plugins\maven\lib\maven3" />
+        <option name="mavenHome" value="C:\Users\Ranbo001\.m2\wrapper\dists\apache-maven-3.6.3-bin\1iopthnavndlasol9gbrbg6bf2\apache-maven-3.6.3" />
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectId" id="1noG27wIjL2xyaHsrl0UO9kDw0Q" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="1o5p7b0nrUgTxvkAEiZuDC5CnQV" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="C:/work/Git/v-plaza/vplaza" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.externalResources" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\work\Git\v-plaza\vplaza\vplazasvr\vplaza-mapper\src\main\java\com\ranbo\vplaza" />
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com" />
     </key>
   </component>
   <component name="RunManager">
     <configuration name="VplazaAppApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ranbo.vplaza.app.VplazaAppApplication" />
+      <option name="MAIN_CLASS_NAME" value="com.ranbo.vplaza.VplazaAppApplication" />
       <module name="vplaza-app" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ranbo.vplaza.app.*" />
+          <option name="PATTERN" value="com.ranbo.vplaza.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -98,86 +64,58 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="4d9da98e-4489-4e20-b05b-f01f8270fc7a" name="Default Changelist" comment="" />
-      <created>1612048820544</created>
+      <changelist id="e75780a3-8911-4b5f-8322-eb7c0cdf391a" name="Default Changelist" comment="" />
+      <created>1612586139104</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1612048820544</updated>
+      <updated>1612586139104</updated>
     </task>
     <servers />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
   <component name="WindowStateProjectService">
-    <state x="1036" y="236" key="#Inspections" timestamp="1612331223458">
+    <state x="114" y="448" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1612621085578">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="1036" y="236" key="#Inspections/0.0.1920.1050@0.0.1920.1050" timestamp="1612331223458" />
-    <state x="389" y="292" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1612272188761">
+    <state x="114" y="448" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1612621085578" />
+    <state x="242" y="405" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1612621090146">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="389" y="292" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1612272188761" />
-    <state x="210" y="275" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1612049656077">
+    <state x="242" y="405" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1920.1050@0.0.1920.1050" timestamp="1612621090146" />
+    <state x="654" y="195" key="FileChooserDialogImpl" timestamp="1612621540209">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="210" y="275" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1612049656077" />
-    <state x="708" y="253" key="FileChooserDialogImpl" timestamp="1612339810448">
+    <state x="654" y="195" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1612621540209" />
+    <state width="1395" height="282" key="GridCell.Tab.0.bottom" timestamp="1612621651099">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="708" y="253" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1612339810448" />
-    <state width="914" height="285" key="GridCell.Tab.0.bottom" timestamp="1612349658851">
+    <state width="1395" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1612621651099" />
+    <state width="1395" height="282" key="GridCell.Tab.0.center" timestamp="1612621651099">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="914" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1612349658851" />
-    <state width="914" height="285" key="GridCell.Tab.0.center" timestamp="1612349658851">
+    <state width="1395" height="282" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1612621651099" />
+    <state width="1395" height="282" key="GridCell.Tab.0.left" timestamp="1612621651099">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="914" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1612349658851" />
-    <state width="914" height="285" key="GridCell.Tab.0.left" timestamp="1612349658851">
+    <state width="1395" height="282" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1612621651099" />
+    <state width="1395" height="282" key="GridCell.Tab.0.right" timestamp="1612621651099">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="914" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1612349658851" />
-    <state width="914" height="285" key="GridCell.Tab.0.right" timestamp="1612349658851">
+    <state width="1395" height="282" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1612621651099" />
+    <state x="376" y="263" key="MyBatisBuilder.ParametersDialog" timestamp="1612621602451">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="914" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1612349658851" />
-    <state x="60" y="263" key="IDE.errors.dialog" timestamp="1612348376390">
+    <state x="376" y="263" key="MyBatisBuilder.ParametersDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1612621602451" />
+    <state x="421" y="341" key="MyBatisBuilder.SettingsDialog" timestamp="1612621479656">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="60" y="263" key="IDE.errors.dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1612348376390" />
-    <state x="936" y="231" key="Maven.ArtifactSearchDialog" timestamp="1612347587494">
+    <state x="421" y="341" key="MyBatisBuilder.SettingsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1612621479656" />
+    <state x="0" y="99" key="SettingsEditor" timestamp="1612621244820">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="936" y="231" key="Maven.ArtifactSearchDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1612347587494" />
-    <state x="503" y="300" key="MyBatisBuilder.ParametersDialog" timestamp="1612339899508">
+    <state x="0" y="99" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1612621244820" />
+    <state x="282" y="319" key="new project wizard" timestamp="1612586761786">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="503" y="300" key="MyBatisBuilder.ParametersDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1612339899508" />
-    <state x="180" y="341" key="MyBatisBuilder.SettingsDialog" timestamp="1612271889949">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="180" y="341" key="MyBatisBuilder.SettingsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1612271889949" />
-    <state x="503" y="129" key="SettingsEditor" timestamp="1612348290954">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="503" y="129" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1612348290954" />
-    <state x="517" y="209" key="com.intellij.javaee.MapExternalResourceDialog" timestamp="1612314600649">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="517" y="209" key="com.intellij.javaee.MapExternalResourceDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1612314600649" />
-    <state x="669" y="130" width="1251" height="669" key="new project wizard" timestamp="1612339455797">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="669" y="130" width="1251" height="669" key="new project wizard/0.0.1920.1050@0.0.1920.1050" timestamp="1612339455797" />
+    <state x="282" y="319" key="new project wizard/0.0.1920.1050@0.0.1920.1050" timestamp="1612586761786" />
   </component>
 </project>
