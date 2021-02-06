@@ -1,0 +1,210 @@
+-- --------------------------------------------------------
+-- 主机:                           127.0.0.1
+-- 服务器版本:                        5.7.32 - MySQL Community Server (GPL)
+-- 服务器操作系统:                      Linux
+-- HeidiSQL 版本:                  11.1.0.6116
+-- --------------------------------------------------------
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+-- 导出  表 vplaza.M_ADMIN_PERMISSION 结构
+DROP TABLE IF EXISTS `M_ADMIN_PERMISSION`;
+CREATE TABLE IF NOT EXISTS `M_ADMIN_PERMISSION` (
+  `ID` smallint(3) NOT NULL AUTO_INCREMENT,
+  `PERMISSION_NAME` varchar(100) COLLATE utf8_bin NOT NULL,
+  `PERMISSION_CODE` tinyint(2) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='管理员权限表';
+
+-- 数据导出被取消选择。
+
+-- 导出  表 vplaza.M_BEHAVIOR 结构
+DROP TABLE IF EXISTS `M_BEHAVIOR`;
+CREATE TABLE IF NOT EXISTS `M_BEHAVIOR` (
+  `ID` smallint(3) NOT NULL AUTO_INCREMENT,
+  `BEHAVIOR_NAME` varchar(100) COLLATE utf8_bin NOT NULL,
+  `BEHAVIOR_CODE` smallint(3) NOT NULL,
+  `CREATE_USER` varchar(50) COLLATE utf8_bin NOT NULL,
+  `CREATE_DATE` datetime(6) NOT NULL,
+  `UPDATE_USER` varchar(50) COLLATE utf8_bin NOT NULL,
+  `UPDATE_DATE` datetime(6) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='行为类型表';
+
+-- 数据导出被取消选择。
+
+-- 导出  表 vplaza.M_USER_PERMISSION 结构
+DROP TABLE IF EXISTS `M_USER_PERMISSION`;
+CREATE TABLE IF NOT EXISTS `M_USER_PERMISSION` (
+  `ID` smallint(3) NOT NULL AUTO_INCREMENT,
+  `UNIQUE_ID` varchar(100) COLLATE utf8_bin NOT NULL,
+  `PERMISSION_NAME` varchar(100) COLLATE utf8_bin NOT NULL,
+  `PERMISSION_CODE` tinyint(2) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='用户权限表';
+
+-- 数据导出被取消选择。
+
+-- 导出  表 vplaza.M_VIDEO_TYPE 结构
+DROP TABLE IF EXISTS `M_VIDEO_TYPE`;
+CREATE TABLE IF NOT EXISTS `M_VIDEO_TYPE` (
+  `ID` smallint(3) NOT NULL AUTO_INCREMENT,
+  `TYPE_NAME` varchar(50) COLLATE utf8_bin NOT NULL,
+  `TYPE_CODE` smallint(3) NOT NULL,
+  `TYPE_EXT` varchar(50) COLLATE utf8_bin NOT NULL,
+  `ICON_PATH` varchar(200) COLLATE utf8_bin NOT NULL,
+  `CREATE_USER` varchar(50) COLLATE utf8_bin NOT NULL,
+  `CREATE_DATE` datetime(6) NOT NULL,
+  `UPDATE_USER` varchar(50) COLLATE utf8_bin NOT NULL,
+  `UPDATE_DATE` datetime(6) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='视频类型表';
+
+-- 数据导出被取消选择。
+
+-- 导出  表 vplaza.T_ADMIN_INFO 结构
+DROP TABLE IF EXISTS `T_ADMIN_INFO`;
+CREATE TABLE IF NOT EXISTS `T_ADMIN_INFO` (
+  `ID` smallint(3) NOT NULL AUTO_INCREMENT,
+  `ADMIN_NAME` varchar(50) COLLATE utf8_bin NOT NULL,
+  `ADMIN_PASS` varchar(100) COLLATE utf8_bin NOT NULL,
+  `PERMISSION_CODE` tinyint(2) NOT NULL,
+  `LAST_LOGIN` datetime(6) DEFAULT NULL,
+  `LAST_IPADDR` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `OLD_PASS` varchar(100) COLLATE utf8_bin DEFAULT NULL,
+  `IS_DELETED` tinyint(1) NOT NULL DEFAULT '0',
+  `CREATE_USER` varchar(50) COLLATE utf8_bin NOT NULL,
+  `CREATE_DATE` datetime(6) NOT NULL,
+  `UPDATE_USER` varchar(50) COLLATE utf8_bin NOT NULL,
+  `UPDATE_DATE` datetime(6) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='管理员信息表';
+
+-- 数据导出被取消选择。
+
+-- 导出  表 vplaza.T_MENU 结构
+DROP TABLE IF EXISTS `T_MENU`;
+CREATE TABLE IF NOT EXISTS `T_MENU` (
+  `ID` smallint(6) NOT NULL AUTO_INCREMENT,
+  `MENU_NAME` varchar(100) COLLATE utf8_bin NOT NULL,
+  `MENU_CODE` varchar(100) COLLATE utf8_bin NOT NULL,
+  `MENU_LEVEL` tinyint(2) NOT NULL,
+  `IS_CHILD` tinyint(1) DEFAULT NULL,
+  `HAS_CHILD` tinyint(1) DEFAULT NULL,
+  `PARENT_CODE` varchar(100) COLLATE utf8_bin DEFAULT NULL,
+  `USER_PERMISSION` tinyint(2) NOT NULL,
+  `IS_DELETED` tinyint(1) NOT NULL DEFAULT '0',
+  `CREATE_USER` varchar(50) COLLATE utf8_bin NOT NULL,
+  `CREATE_DATE` datetime(6) NOT NULL,
+  `UPDATE_USER` varchar(50) COLLATE utf8_bin NOT NULL,
+  `UPDATE_DATE` datetime(6) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='分级菜单表';
+
+-- 数据导出被取消选择。
+
+-- 导出  表 vplaza.T_USER 结构
+DROP TABLE IF EXISTS `T_USER`;
+CREATE TABLE IF NOT EXISTS `T_USER` (
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `USER_NAME` varchar(50) COLLATE utf8_bin NOT NULL,
+  `USER_PASS` varchar(100) COLLATE utf8_bin NOT NULL,
+  `UNIQUE_ID` varchar(100) COLLATE utf8_bin NOT NULL,
+  `PERMISSION_CODE` tinyint(2) NOT NULL,
+  `LAST_LOGIN` datetime(6) DEFAULT NULL,
+  `LAST_IPADDR` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `OLD_PASS` varchar(100) COLLATE utf8_bin DEFAULT NULL,
+  `AGE` tinyint(3) DEFAULT NULL,
+  `SEX` varchar(10) COLLATE utf8_bin DEFAULT NULL,
+  `COUNTRY` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `EMAIL` varchar(100) COLLATE utf8_bin DEFAULT NULL,
+  `TEL` varchar(30) COLLATE utf8_bin DEFAULT NULL,
+  `IS_DELETED` tinyint(1) NOT NULL DEFAULT '0',
+  `CREATE_USER` varchar(50) COLLATE utf8_bin NOT NULL,
+  `CREATE_DATE` datetime(6) NOT NULL,
+  `UPDATE_USER` varchar(50) COLLATE utf8_bin NOT NULL,
+  `UPDATE_DATE` datetime(6) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='用户登录信息表';
+
+-- 数据导出被取消选择。
+
+-- 导出  表 vplaza.T_USER_ACCOUNT 结构
+DROP TABLE IF EXISTS `T_USER_ACCOUNT`;
+CREATE TABLE IF NOT EXISTS `T_USER_ACCOUNT` (
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `UNIQUE_ID` varchar(100) COLLATE utf8_bin NOT NULL,
+  `BEHAVIOR_CODE` smallint(3) NOT NULL,
+  `BEHAVIOR_OBJ` varchar(100) COLLATE utf8_bin DEFAULT NULL,
+  `AMOUNT` int(11) DEFAULT NULL,
+  `IS_DELETED` tinyint(1) NOT NULL DEFAULT '0',
+  `CREATE_USER` varchar(50) COLLATE utf8_bin NOT NULL,
+  `CREATE_DATE` datetime(6) NOT NULL,
+  `UPDATE_USER` varchar(50) COLLATE utf8_bin NOT NULL,
+  `UPDATE_DATE` datetime(6) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='用户账户信息表';
+
+-- 数据导出被取消选择。
+
+-- 导出  表 vplaza.T_USER_FAVORITE 结构
+DROP TABLE IF EXISTS `T_USER_FAVORITE`;
+CREATE TABLE IF NOT EXISTS `T_USER_FAVORITE` (
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `UNIQUE_ID` varchar(100) COLLATE utf8_bin NOT NULL,
+  `BEHAVIOR_CODE` smallint(3) NOT NULL,
+  `BEHAVIOR_OBJ` varchar(100) COLLATE utf8_bin DEFAULT NULL,
+  `AMOUNT` int(11) DEFAULT NULL,
+  `IS_DELETED` tinyint(1) NOT NULL DEFAULT '0',
+  `CREATE_USER` varchar(50) COLLATE utf8_bin NOT NULL,
+  `CREATE_DATE` datetime(6) NOT NULL,
+  `UPDATE_USER` varchar(50) COLLATE utf8_bin NOT NULL,
+  `UPDATE_DATE` datetime(6) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='用户行为记录表';
+
+-- 数据导出被取消选择。
+
+-- 导出  表 vplaza.T_VIDEO_INFO 结构
+DROP TABLE IF EXISTS `T_VIDEO_INFO`;
+CREATE TABLE IF NOT EXISTS `T_VIDEO_INFO` (
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `UNIQUE_ID` varchar(100) COLLATE utf8_bin NOT NULL,
+  `VIDEO_NAME` varchar(500) COLLATE utf8_bin NOT NULL,
+  `VIDEO_DESC` varchar(1000) COLLATE utf8_bin DEFAULT NULL,
+  `KEY_WORD` varchar(100) COLLATE utf8_bin DEFAULT NULL,
+  `VIDEO_NO` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `RELEASE_YEAR` year(4) DEFAULT NULL,
+  `PUBLISHER` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `STARRING` varchar(100) COLLATE utf8_bin DEFAULT NULL,
+  `DIRECTOR` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `COUNTRY` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `HAS_MOSAIC` tinyint(1) DEFAULT NULL,
+  `PATH` varchar(200) COLLATE utf8_bin NOT NULL,
+  `MENU_CODE` varchar(200) COLLATE utf8_bin NOT NULL,
+  `PLAY_PERMISSION` tinyint(2) NOT NULL,
+  `VIEWS` bigint(20) DEFAULT NULL,
+  `DURATION` time NOT NULL,
+  `THUMB_PATH` varchar(200) COLLATE utf8_bin DEFAULT NULL,
+  `RELATED_IMG` varchar(200) COLLATE utf8_bin DEFAULT NULL,
+  `CHECK_SUM` varchar(100) COLLATE utf8_bin NOT NULL,
+  `APPROVAL_STATUS` tinyint(1) NOT NULL DEFAULT '0',
+  `IS_DELETED` tinyint(1) NOT NULL DEFAULT '0',
+  `CREATE_USER` varchar(50) COLLATE utf8_bin NOT NULL,
+  `CREATE_DATE` datetime(6) NOT NULL,
+  `UPDATE_USER` varchar(50) COLLATE utf8_bin NOT NULL,
+  `UPDATE_DATE` datetime(6) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='视频信息表';
+
+-- 数据导出被取消选择。
+
+/*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
