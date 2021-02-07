@@ -24,7 +24,12 @@ public class TestService {
     }
 
     public int addAdmin(MAdminPermission adminPermission){
-        int result = adminMapper.insertSelective(adminPermission);
-        return result;
+        try{
+            int result = adminMapper.insert(adminPermission);
+            return result;
+        }catch (Exception e){
+            e.printStackTrace();
+            return -1;
+        }
     }
 }

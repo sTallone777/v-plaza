@@ -24,7 +24,7 @@ public class testController {
     @GetMapping("/addAdmin")
     public int method2(){
         MAdminPermission admin = new MAdminPermission();
-        admin.setPermissionCode((byte)(1&0xFF));
+        admin.setPermissionCode((byte)0x01);
         admin.setPermissionName("super admin");
         return ts.addAdmin(admin);
     }
