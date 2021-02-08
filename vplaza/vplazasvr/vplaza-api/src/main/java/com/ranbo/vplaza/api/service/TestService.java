@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Consumer;
 
 @Service
 public class TestService {
@@ -22,12 +23,12 @@ public class TestService {
         userList.add("user3");
         return userList;
     }
-
-    public int addAdmin(MAdminPermission adminPermission){
-        try{
+    @ExecTimeLog
+    public int addAdmin(MAdminPermission adminPermission) {
+        try {
             int result = adminMapper.insert(adminPermission);
             return result;
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
             return -1;
         }

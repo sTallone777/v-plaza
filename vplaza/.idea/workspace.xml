@@ -24,21 +24,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e75780a3-8911-4b5f-8322-eb7c0cdf391a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vplazasvr/vplaza-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vplazasvr/vplaza-api/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vplazasvr/vplaza-api/src/main/java/com/ranbo/vplaza/api/service/TestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/vplazasvr/vplaza-api/src/main/java/com/ranbo/vplaza/api/service/TestService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vplazasvr/vplaza-app/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vplazasvr/vplaza-app/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vplazasvr/vplaza-app/src/main/java/com/ranbo/vplaza/app/controller/testController.java" beforeDir="false" afterPath="$PROJECT_DIR$/vplazasvr/vplaza-app/src/main/java/com/ranbo/vplaza/app/controller/testController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vplazasvr/vplaza-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vplazasvr/vplaza-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vplazasvr/vplaza-common/src/main/java/com/ranbo/vplaza/db/sqlmap/MAdminPermissionMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vplazasvr/vplaza-common/src/main/java/com/ranbo/vplaza/db/mapper/MAdminPermissionMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vplazasvr/vplaza-common/src/main/java/com/ranbo/vplaza/db/sqlmap/MBehaviorMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vplazasvr/vplaza-common/src/main/java/com/ranbo/vplaza/db/mapper/MBehaviorMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vplazasvr/vplaza-common/src/main/java/com/ranbo/vplaza/db/sqlmap/MUserPermissionMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vplazasvr/vplaza-common/src/main/java/com/ranbo/vplaza/db/mapper/MUserPermissionMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vplazasvr/vplaza-common/src/main/java/com/ranbo/vplaza/db/sqlmap/MVideoTypeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vplazasvr/vplaza-common/src/main/java/com/ranbo/vplaza/db/mapper/MVideoTypeMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vplazasvr/vplaza-common/src/main/java/com/ranbo/vplaza/db/sqlmap/TAdminInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vplazasvr/vplaza-common/src/main/java/com/ranbo/vplaza/db/mapper/TAdminInfoMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vplazasvr/vplaza-common/src/main/java/com/ranbo/vplaza/db/sqlmap/TMenuMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vplazasvr/vplaza-common/src/main/java/com/ranbo/vplaza/db/mapper/TMenuMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vplazasvr/vplaza-common/src/main/java/com/ranbo/vplaza/db/sqlmap/TUserAccountMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vplazasvr/vplaza-common/src/main/java/com/ranbo/vplaza/db/mapper/TUserAccountMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vplazasvr/vplaza-common/src/main/java/com/ranbo/vplaza/db/sqlmap/TUserFavoriteMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vplazasvr/vplaza-common/src/main/java/com/ranbo/vplaza/db/mapper/TUserFavoriteMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vplazasvr/vplaza-common/src/main/java/com/ranbo/vplaza/db/sqlmap/TUserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vplazasvr/vplaza-common/src/main/java/com/ranbo/vplaza/db/mapper/TUserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vplazasvr/vplaza-common/src/main/java/com/ranbo/vplaza/db/sqlmap/TVideoInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vplazasvr/vplaza-common/src/main/java/com/ranbo/vplaza/db/mapper/TVideoInfoMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
