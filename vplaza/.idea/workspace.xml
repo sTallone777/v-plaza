@@ -24,7 +24,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e75780a3-8911-4b5f-8322-eb7c0cdf391a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vplazasvr/vplaza-api/src/main/java/com/ranbo/vplaza/api/service/TestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/vplazasvr/vplaza-api/src/main/java/com/ranbo/vplaza/api/service/TestService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +58,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -123,10 +122,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="242" y="405" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1920.1050@0.0.1920.1050" timestamp="1612621090146" />
-    <state x="654" y="195" key="FileChooserDialogImpl" timestamp="1612660132388">
+    <state x="654" y="195" key="FileChooserDialogImpl" timestamp="1613114915506">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="654" y="195" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1612660132388" />
+    <state x="654" y="195" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1613114915506" />
     <state width="882" height="281" key="GridCell.Tab.0.bottom" timestamp="1612687680840">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -155,10 +154,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="421" y="341" key="MyBatisBuilder.SettingsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1612621479656" />
-    <state x="0" y="99" key="SettingsEditor" timestamp="1612687469518">
+    <state x="772" y="118" key="SettingsEditor" timestamp="1613215895311">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="0" y="99" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1612687469518" />
+    <state x="772" y="118" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1613215895311" />
     <state x="282" y="319" key="new project wizard" timestamp="1612586761786">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
